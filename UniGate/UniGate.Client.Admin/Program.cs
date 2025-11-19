@@ -1,6 +1,4 @@
-using UniGate.Client.Forms;
-
-namespace UniGate.Client
+namespace UniGate.Client.Admin
 {
     internal static class Program
     {

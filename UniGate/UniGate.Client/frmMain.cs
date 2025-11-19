@@ -16,5 +16,12 @@ namespace UniGate.Client
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(button2,
+                           new Point(0, button2.Height));
+        }
+
     }
 }

@@ -21,9 +21,7 @@
         }
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label2 = new Label();
-            button1 = new Button();
+            components = new System.ComponentModel.Container();
             panel2 = new Panel();
             label11 = new Label();
             label12 = new Label();
@@ -39,37 +37,17 @@
             label5 = new Label();
             label3 = new Label();
             label1 = new Label();
-            panel1.SuspendLayout();
+            button1 = new Button();
+            label2 = new Label();
+            panel1 = new Panel();
+            button2 = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            ehheToolStripMenuItem = new ToolStripMenuItem();
+            hihiToolStripMenuItem = new ToolStripMenuItem();
             panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 85);
-            panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(915, 34);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 16);
-            label2.TabIndex = 3;
-            label2.Text = "label2";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(1003, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(114, 32);
-            button1.TabIndex = 0;
-            button1.Text = "btnLogout";
-            button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -88,9 +66,9 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 85);
+            panel2.Location = new Point(0, 76);
             panel2.Name = "panel2";
-            panel2.Size = new Size(229, 693);
+            panel2.Size = new Size(229, 702);
             panel2.TabIndex = 1;
             // 
             // label11
@@ -246,7 +224,64 @@
             label1.Text = "Khám phá Bản thân";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // admin
+            // button1
+            // 
+            button1.Location = new Point(1003, 26);
+            button1.Name = "button1";
+            button1.Size = new Size(114, 32);
+            button1.TabIndex = 0;
+            button1.Text = "btnLogout";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(915, 34);
+            label2.Name = "label2";
+            label2.Size = new Size(44, 16);
+            label2.TabIndex = 3;
+            label2.Text = "label2";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1152, 76);
+            panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(49, 19);
+            button2.Name = "button2";
+            button2.Size = new Size(144, 47);
+            button2.TabIndex = 3;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { ehheToolStripMenuItem, hihiToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(101, 48);
+            // 
+            // ehheToolStripMenuItem
+            // 
+            ehheToolStripMenuItem.Name = "ehheToolStripMenuItem";
+            ehheToolStripMenuItem.Size = new Size(100, 22);
+            ehheToolStripMenuItem.Text = "ehhe";
+            // 
+            // hihiToolStripMenuItem
+            // 
+            hihiToolStripMenuItem.Name = "hihiToolStripMenuItem";
+            hihiToolStripMenuItem.Size = new Size(100, 22);
+            hihiToolStripMenuItem.Text = "hihi";
+            // 
+            // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -254,19 +289,16 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 9.75F);
-            Name = "admin";
+            Name = "frmMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "admin";
+            panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
         }
-
-
-        private Panel panel1;
         private Panel panel2;
-        private Button button1;
-        private Label label2;
         private Label label1;
         private Label label4;
         private Label label5;
@@ -281,14 +313,12 @@
         private Label label14;
         private Label label15;
         private Label label6;
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-
-        #endregion
+        private Button button1;
+        private Label label2;
+        private Panel panel1;
+        private Button button2;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem ehheToolStripMenuItem;
+        private ToolStripMenuItem hihiToolStripMenuItem;
     }
 }
