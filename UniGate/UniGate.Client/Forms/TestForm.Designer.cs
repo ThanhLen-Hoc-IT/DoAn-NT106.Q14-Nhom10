@@ -67,7 +67,6 @@
             Controls.Add(label1);
             Controls.Add(label2);
             Name = "TestForm";
-            Text = "TestForm";
             ResumeLayout(false);
             PerformLayout();
         }
