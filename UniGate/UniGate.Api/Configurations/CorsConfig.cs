@@ -1,23 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace UniGate.Api.Configurations
+﻿namespace UniGate.Api.Configurations
 {
-    public static class CorsConfig
+    public class CorsConfig
     {
-        public static IServiceCollection AddCorsConfig(this IServiceCollection services)
-        {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll", builder =>
-                {
-                    builder
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
-                });
-            });
-
-            return services;
-        }
     }
 }
