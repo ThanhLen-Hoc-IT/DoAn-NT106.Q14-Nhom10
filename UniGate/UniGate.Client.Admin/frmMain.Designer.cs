@@ -79,6 +79,7 @@
             toolStripMenuItem21 = new ToolStripMenuItem();
             toolStripMenuItem22 = new ToolStripMenuItem();
             toolStripMenuItem23 = new ToolStripMenuItem();
+            label16 = new Label();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             menuAdd.SuspendLayout();
@@ -592,11 +593,21 @@
             toolStripMenuItem23.Size = new Size(180, 46);
             toolStripMenuItem23.Text = "phuong thuc tuyen sinh";
             // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(306, 464);
+            label16.Name = "label16";
+            label16.Size = new Size(160, 16);
+            label16.TabIndex = 3;
+            label16.Text = "khuong thanh len bi khung";
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 778);
+            Controls.Add(label16);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 9.75F);
@@ -609,6 +620,7 @@
             menuDelete.ResumeLayout(false);
             menuUpdate.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
         private Panel panel2;
         private Label label1;
@@ -676,5 +688,6 @@
         private ToolStripMenuItem toolStripMenuItem21;
         private ToolStripMenuItem toolStripMenuItem22;
         private ToolStripMenuItem toolStripMenuItem23;
+        private Label label16;
     }
 }
