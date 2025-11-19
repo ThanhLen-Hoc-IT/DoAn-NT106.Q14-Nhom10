@@ -1,5 +1,3 @@
-using UniGate.Client.Forms;
-
 namespace UniGate.Client
 {
     internal static class Program
@@ -13,7 +11,7 @@ namespace UniGate.Client
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmMain());
+            Application.Run(new Form1());
         }
     }
 }

@@ -28,53 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            imageList1 = new ImageList(components);
-            label2 = new Label();
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // imageList1
-            // 
-            imageList1.ColorDepth = ColorDepth.Depth32Bit;
-            imageList1.ImageSize = new Size(16, 16);
-            imageList1.TransparentColor = Color.Transparent;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(221, -1310);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 15);
-            label2.TabIndex = 1;
-            label2.Text = "alalalala";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(208, 59);
-            label1.Name = "label1";
-            label1.Size = new Size(349, 32);
-            label1.TabIndex = 2;
-            label1.Text = "Hacker Mũ Đen Đồ Án App Lậu\r\n";
-            // 
-            // TestForm
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(label2);
-            Name = "TestForm";
-            ResumeLayout(false);
-            PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "TestForm";
         }
 
         #endregion
-
-        private ImageList imageList1;
-        private Label label2;
-        private Label label1;
     }
 }

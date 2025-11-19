@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96
+VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniGate.Api", "UniGate.Api\UniGate.Api.csproj", "{4B0842E1-0A2C-49DF-9FA1-934882815898}"
 EndProject
@@ -16,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniGate.Client.Services", "UniGate.Client.Services\UniGate.Client.Services.csproj", "{B1FECAAE-F00B-49D8-A063-512004BF776B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniGate.Shared", "UniGate.Shared\UniGate.Shared.csproj", "{A8802461-80D5-4750-A943-076A5DCBAA0D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniGate.Client.Admin", "UniGate.Client.Admin\UniGate.Client.Admin.csproj", "{7D2D6F7B-16E4-4506-B651-410716A83983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +51,6 @@ Global
 		{A8802461-80D5-4750-A943-076A5DCBAA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8802461-80D5-4750-A943-076A5DCBAA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8802461-80D5-4750-A943-076A5DCBAA0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D2D6F7B-16E4-4506-B651-410716A83983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D2D6F7B-16E4-4506-B651-410716A83983}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D2D6F7B-16E4-4506-B651-410716A83983}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D2D6F7B-16E4-4506-B651-410716A83983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
