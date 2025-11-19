@@ -11,4 +11,12 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Auth\" />
+    <Folder Include="Controllers\School\" />
+    <Folder Include="Controllers\Score\" />
+    <Folder Include="Controllers\Suggest\" />
+    <Folder Include="Controllers\Test\" />
+  </ItemGroup>
+
 </Project>
