@@ -23,625 +23,520 @@
         {
             components = new System.ComponentModel.Container();
             panel2 = new Panel();
-            label11 = new Label();
-            label12 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label15 = new Label();
-            label6 = new Label();
-            label10 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label3 = new Label();
-            label1 = new Label();
-            button1 = new Button();
-            label2 = new Label();
-            panel1 = new Panel();
-            btnUpdate = new Button();
-            btnDelete = new Button();
-            btnAdd = new Button();
-            menuAdd = new ContextMenuStrip(components);
+            lblMajorByInterest = new Label();
+            lblMajorRecommend = new Label();
+            lblMajorByBlock = new Label();
+            lblMajorByScore = new Label();
+            h2TraCuuNganhTruong = new Label();
+            lblScoreManagement = new Label();
+            lblScoreConversion = new Label();
+            lblScorePercentile = new Label();
+            lblInputScore = new Label();
+            h2DanhGiaDiemThi = new Label();
+            lblQuiz = new Label();
+            lblQuizResults = new Label();
+            h2KhamPhaBanThan = new Label();
+            btnLogout = new Button();
+            lblLogout = new Label();
+            panelMenu = new Panel();
+            btnMajorMenu = new Button();
+            btnUniversityMenu = new Button();
+            btnScoreMenu = new Button();
+            btnQuizMenu = new Button();
+            quizContextMenu = new ContextMenuStrip(components);
             ehheToolStripMenuItem = new ToolStripMenuItem();
-            nganhToolStripMenuItem = new ToolStripMenuItem();
-            cauHoiToolStripMenuItem = new ToolStripMenuItem();
-            truongToolStripMenuItem = new ToolStripMenuItem();
             hihiToolStripMenuItem = new ToolStripMenuItem();
-            hihiieToolStripMenuItem = new ToolStripMenuItem();
-            phoDiemToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
-            truongToolStripMenuItem1 = new ToolStripMenuItem();
-            nganhToolStripMenuItem1 = new ToolStripMenuItem();
-            phuongThucTuyenSinhToolStripMenuItem = new ToolStripMenuItem();
-            menuDelete = new ContextMenuStrip(components);
+            lblLenKhung = new Label();
+            scoreContextMenu = new ContextMenuStrip(components);
             toolStripMenuItem2 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
-            toolStripMenuItem4 = new ToolStripMenuItem();
-            toolStripMenuItem5 = new ToolStripMenuItem();
-            toolStripMenuItem6 = new ToolStripMenuItem();
-            toolStripMenuItem7 = new ToolStripMenuItem();
+            majorContextMenu = new ContextMenuStrip(components);
             toolStripMenuItem8 = new ToolStripMenuItem();
             toolStripMenuItem9 = new ToolStripMenuItem();
             toolStripMenuItem10 = new ToolStripMenuItem();
-            toolStripMenuItem11 = new ToolStripMenuItem();
-            toolStripMenuItem12 = new ToolStripMenuItem();
-            menuUpdate = new ContextMenuStrip(components);
-            toolStripMenuItem13 = new ToolStripMenuItem();
+            universityContextMenu = new ContextMenuStrip(components);
+            toolStripMenuItem5 = new ToolStripMenuItem();
+            toolStripMenuItem6 = new ToolStripMenuItem();
+            toolStripMenuItem7 = new ToolStripMenuItem();
             toolStripMenuItem14 = new ToolStripMenuItem();
             toolStripMenuItem15 = new ToolStripMenuItem();
             toolStripMenuItem16 = new ToolStripMenuItem();
-            toolStripMenuItem17 = new ToolStripMenuItem();
-            toolStripMenuItem18 = new ToolStripMenuItem();
-            toolStripMenuItem19 = new ToolStripMenuItem();
-            toolStripMenuItem20 = new ToolStripMenuItem();
-            toolStripMenuItem21 = new ToolStripMenuItem();
-            toolStripMenuItem22 = new ToolStripMenuItem();
-            toolStripMenuItem23 = new ToolStripMenuItem();
-            label16 = new Label();
             panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            menuAdd.SuspendLayout();
-            menuDelete.SuspendLayout();
-            menuUpdate.SuspendLayout();
+            panelMenu.SuspendLayout();
+            quizContextMenu.SuspendLayout();
+            scoreContextMenu.SuspendLayout();
+            majorContextMenu.SuspendLayout();
+            universityContextMenu.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
             // 
-            panel2.Controls.Add(label11);
-            panel2.Controls.Add(label12);
-            panel2.Controls.Add(label14);
-            panel2.Controls.Add(label13);
-            panel2.Controls.Add(label15);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label1);
+            panel2.Controls.Add(lblMajorByInterest);
+            panel2.Controls.Add(lblMajorRecommend);
+            panel2.Controls.Add(lblMajorByBlock);
+            panel2.Controls.Add(lblMajorByScore);
+            panel2.Controls.Add(h2TraCuuNganhTruong);
+            panel2.Controls.Add(lblScoreManagement);
+            panel2.Controls.Add(lblScoreConversion);
+            panel2.Controls.Add(lblScorePercentile);
+            panel2.Controls.Add(lblInputScore);
+            panel2.Controls.Add(h2DanhGiaDiemThi);
+            panel2.Controls.Add(lblQuiz);
+            panel2.Controls.Add(lblQuizResults);
+            panel2.Controls.Add(h2KhamPhaBanThan);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 76);
             panel2.Name = "panel2";
             panel2.Size = new Size(229, 702);
             panel2.TabIndex = 1;
+            panel2.Paint += panel2_Paint;
             // 
-            // label11
+            // lblMajorByInterest
             // 
-            label11.BackColor = SystemColors.ControlLightLight;
-            label11.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label11.Location = new Point(-1, 428);
-            label11.Name = "label11";
-            label11.Size = new Size(226, 46);
-            label11.TabIndex = 23;
-            label11.Text = "Ngành Theo Sở Thích";
-            label11.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByInterest.BackColor = SystemColors.ControlLightLight;
+            lblMajorByInterest.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByInterest.Location = new Point(-1, 428);
+            lblMajorByInterest.Name = "lblMajorByInterest";
+            lblMajorByInterest.Size = new Size(226, 46);
+            lblMajorByInterest.TabIndex = 23;
+            lblMajorByInterest.Text = "Ngành Theo Sở Thích";
+            lblMajorByInterest.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByInterest.Click += lblMajorByInterest_Click;
+            lblMajorByInterest.MouseEnter += Label_MouseEnter;
+            lblMajorByInterest.MouseLeave += Label_MouseLeave;
             // 
-            // label12
+            // lblMajorRecommend
             // 
-            label12.BackColor = SystemColors.ControlLightLight;
-            label12.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label12.Location = new Point(-3, 570);
-            label12.Name = "label12";
-            label12.Size = new Size(226, 46);
-            label12.TabIndex = 22;
-            label12.Text = "Ngành Phù hợp";
-            label12.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorRecommend.BackColor = SystemColors.ControlLightLight;
+            lblMajorRecommend.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorRecommend.Location = new Point(-3, 570);
+            lblMajorRecommend.Name = "lblMajorRecommend";
+            lblMajorRecommend.Size = new Size(226, 46);
+            lblMajorRecommend.TabIndex = 22;
+            lblMajorRecommend.Text = "Ngành Phù hợp";
+            lblMajorRecommend.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorRecommend.Click += lblMajorRecommend_Click;
+            lblMajorRecommend.MouseEnter += Label_MouseEnter;
+            lblMajorRecommend.MouseLeave += Label_MouseLeave;
             // 
-            // label14
+            // lblMajorByBlock
             // 
-            label14.BackColor = SystemColors.ControlLightLight;
-            label14.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label14.Location = new Point(-3, 520);
-            label14.Name = "label14";
-            label14.Size = new Size(226, 46);
-            label14.TabIndex = 20;
-            label14.Text = "Ngành Theo Khối";
-            label14.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByBlock.BackColor = SystemColors.ControlLightLight;
+            lblMajorByBlock.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByBlock.Location = new Point(-3, 520);
+            lblMajorByBlock.Name = "lblMajorByBlock";
+            lblMajorByBlock.Size = new Size(226, 46);
+            lblMajorByBlock.TabIndex = 20;
+            lblMajorByBlock.Text = "Ngành Theo Khối";
+            lblMajorByBlock.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByBlock.Click += lblMajorByBlock_Click;
+            lblMajorByBlock.MouseEnter += Label_MouseEnter;
+            lblMajorByBlock.MouseLeave += Label_MouseLeave;
             // 
-            // label13
+            // lblMajorByScore
             // 
-            label13.BackColor = SystemColors.ControlLightLight;
-            label13.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label13.Location = new Point(-3, 474);
-            label13.Name = "label13";
-            label13.Size = new Size(226, 46);
-            label13.TabIndex = 21;
-            label13.Text = "Ngành Theo Điểm";
-            label13.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByScore.BackColor = SystemColors.ControlLightLight;
+            lblMajorByScore.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByScore.Location = new Point(-3, 474);
+            lblMajorByScore.Name = "lblMajorByScore";
+            lblMajorByScore.Size = new Size(226, 46);
+            lblMajorByScore.TabIndex = 21;
+            lblMajorByScore.Text = "Ngành Theo Điểm";
+            lblMajorByScore.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByScore.Click += lblMajorByScore_Click;
+            lblMajorByScore.MouseEnter += Label_MouseEnter;
+            lblMajorByScore.MouseLeave += Label_MouseLeave;
             // 
-            // label15
+            // h2TraCuuNganhTruong
             // 
-            label15.BackColor = SystemColors.ControlLightLight;
-            label15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label15.Location = new Point(-1, 380);
-            label15.Name = "label15";
-            label15.Size = new Size(226, 46);
-            label15.TabIndex = 19;
-            label15.Text = "Tra cứu Ngành & Trường";
-            label15.TextAlign = ContentAlignment.MiddleLeft;
+            h2TraCuuNganhTruong.BackColor = SystemColors.ControlLightLight;
+            h2TraCuuNganhTruong.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            h2TraCuuNganhTruong.Location = new Point(-1, 380);
+            h2TraCuuNganhTruong.Name = "h2TraCuuNganhTruong";
+            h2TraCuuNganhTruong.Size = new Size(226, 46);
+            h2TraCuuNganhTruong.TabIndex = 19;
+            h2TraCuuNganhTruong.Text = "Tra cứu Ngành & Trường";
+            h2TraCuuNganhTruong.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lblScoreManagement
             // 
-            label6.BackColor = SystemColors.ControlLightLight;
-            label6.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label6.Location = new Point(1, 242);
-            label6.Name = "label6";
-            label6.Size = new Size(226, 46);
-            label6.TabIndex = 18;
-            label6.Text = "Quản lý Điểm thi";
-            label6.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreManagement.BackColor = SystemColors.ControlLightLight;
+            lblScoreManagement.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScoreManagement.Location = new Point(1, 242);
+            lblScoreManagement.Name = "lblScoreManagement";
+            lblScoreManagement.Size = new Size(226, 46);
+            lblScoreManagement.TabIndex = 18;
+            lblScoreManagement.Text = "Quản lý Điểm thi";
+            lblScoreManagement.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreManagement.Click += lblScoreManagement_Click;
+            lblScoreManagement.MouseEnter += Label_MouseEnter;
+            lblScoreManagement.MouseLeave += Label_MouseLeave;
             // 
-            // label10
+            // lblScoreConversion
             // 
-            label10.BackColor = SystemColors.ControlLightLight;
-            label10.Location = new Point(-1, 717);
-            label10.Name = "label10";
-            label10.Size = new Size(226, 46);
-            label10.TabIndex = 17;
-            label10.Text = "lable1";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            lblScoreConversion.BackColor = SystemColors.ControlLightLight;
+            lblScoreConversion.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScoreConversion.Location = new Point(-1, 334);
+            lblScoreConversion.Name = "lblScoreConversion";
+            lblScoreConversion.Size = new Size(226, 46);
+            lblScoreConversion.TabIndex = 8;
+            lblScoreConversion.Text = "quy doi diem";
+            lblScoreConversion.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreConversion.Click += lblScoreConversion_Click;
+            lblScoreConversion.MouseEnter += Label_MouseEnter;
+            lblScoreConversion.MouseLeave += Label_MouseLeave;
             // 
-            // label7
+            // lblScorePercentile
             // 
-            label7.BackColor = SystemColors.ControlLightLight;
-            label7.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label7.Location = new Point(-1, 334);
-            label7.Name = "label7";
-            label7.Size = new Size(226, 46);
-            label7.TabIndex = 8;
-            label7.Text = "quy doi diem";
-            label7.TextAlign = ContentAlignment.MiddleLeft;
+            lblScorePercentile.BackColor = SystemColors.ControlLightLight;
+            lblScorePercentile.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScorePercentile.Location = new Point(1, 288);
+            lblScorePercentile.Name = "lblScorePercentile";
+            lblScorePercentile.Size = new Size(226, 46);
+            lblScorePercentile.TabIndex = 7;
+            lblScorePercentile.Text = "xem phanvi/trung vi";
+            lblScorePercentile.TextAlign = ContentAlignment.MiddleLeft;
+            lblScorePercentile.Click += lblScorePercentile_Click;
+            lblScorePercentile.MouseEnter += Label_MouseEnter;
+            lblScorePercentile.MouseLeave += Label_MouseLeave;
             // 
-            // label8
+            // lblInputScore
             // 
-            label8.BackColor = SystemColors.ControlLightLight;
-            label8.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label8.Location = new Point(1, 288);
-            label8.Name = "label8";
-            label8.Size = new Size(226, 46);
-            label8.TabIndex = 7;
-            label8.Text = "xem phanvi/trung vi";
-            label8.TextAlign = ContentAlignment.MiddleLeft;
+            lblInputScore.BackColor = SystemColors.ControlLightLight;
+            lblInputScore.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblInputScore.Location = new Point(1, 192);
+            lblInputScore.Name = "lblInputScore";
+            lblInputScore.Size = new Size(226, 46);
+            lblInputScore.TabIndex = 6;
+            lblInputScore.Text = "nhap diem";
+            lblInputScore.TextAlign = ContentAlignment.MiddleLeft;
+            lblInputScore.Click += lblInputScore_Click;
+            lblInputScore.MouseEnter += Label_MouseEnter;
+            lblInputScore.MouseLeave += Label_MouseLeave;
             // 
-            // label9
+            // h2DanhGiaDiemThi
             // 
-            label9.BackColor = SystemColors.ControlLightLight;
-            label9.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label9.Location = new Point(1, 192);
-            label9.Name = "label9";
-            label9.Size = new Size(226, 46);
-            label9.TabIndex = 6;
-            label9.Text = "nhap diem";
-            label9.TextAlign = ContentAlignment.MiddleLeft;
+            h2DanhGiaDiemThi.BackColor = SystemColors.ControlLightLight;
+            h2DanhGiaDiemThi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            h2DanhGiaDiemThi.Location = new Point(1, 144);
+            h2DanhGiaDiemThi.Name = "h2DanhGiaDiemThi";
+            h2DanhGiaDiemThi.Size = new Size(226, 46);
+            h2DanhGiaDiemThi.TabIndex = 5;
+            h2DanhGiaDiemThi.Text = "Đánh giá Điểm thi";
+            h2DanhGiaDiemThi.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lblQuiz
             // 
-            label4.BackColor = SystemColors.ControlLightLight;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label4.Location = new Point(1, 144);
-            label4.Name = "label4";
-            label4.Size = new Size(226, 46);
-            label4.TabIndex = 5;
-            label4.Text = "Đánh giá Điểm thi";
-            label4.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuiz.BackColor = SystemColors.ControlLightLight;
+            lblQuiz.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblQuiz.Location = new Point(1, 48);
+            lblQuiz.Name = "lblQuiz";
+            lblQuiz.Size = new Size(226, 46);
+            lblQuiz.TabIndex = 4;
+            lblQuiz.Text = "trac nghiem tinh cach";
+            lblQuiz.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuiz.Click += lblQuiz_Click;
+            lblQuiz.MouseEnter += Label_MouseEnter;
+            lblQuiz.MouseLeave += Label_MouseLeave;
             // 
-            // label5
+            // lblQuizResults
             // 
-            label5.BackColor = SystemColors.ControlLightLight;
-            label5.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label5.Location = new Point(1, 48);
-            label5.Name = "label5";
-            label5.Size = new Size(226, 46);
-            label5.TabIndex = 4;
-            label5.Text = "trac nghiem tinh cach";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuizResults.BackColor = SystemColors.ControlLightLight;
+            lblQuizResults.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblQuizResults.Location = new Point(1, 96);
+            lblQuizResults.Name = "lblQuizResults";
+            lblQuizResults.Size = new Size(226, 46);
+            lblQuizResults.TabIndex = 3;
+            lblQuizResults.Text = "ket qua";
+            lblQuizResults.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuizResults.Click += lblQuizResults_Click;
+            lblQuizResults.MouseEnter += Label_MouseEnter;
+            lblQuizResults.MouseLeave += Label_MouseLeave;
             // 
-            // label3
+            // h2KhamPhaBanThan
             // 
-            label3.BackColor = SystemColors.ControlLightLight;
-            label3.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label3.Location = new Point(1, 96);
-            label3.Name = "label3";
-            label3.Size = new Size(226, 46);
-            label3.TabIndex = 3;
-            label3.Text = "ket qua";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            h2KhamPhaBanThan.BackColor = SystemColors.ControlLightLight;
+            h2KhamPhaBanThan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            h2KhamPhaBanThan.Location = new Point(1, 1);
+            h2KhamPhaBanThan.Name = "h2KhamPhaBanThan";
+            h2KhamPhaBanThan.Size = new Size(226, 46);
+            h2KhamPhaBanThan.TabIndex = 2;
+            h2KhamPhaBanThan.Text = "Khám phá Bản thân";
+            h2KhamPhaBanThan.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // btnLogout
             // 
-            label1.BackColor = SystemColors.ControlLightLight;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1, 1);
-            label1.Name = "label1";
-            label1.Size = new Size(226, 46);
-            label1.TabIndex = 2;
-            label1.Text = "Khám phá Bản thân";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(1003, 26);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(114, 32);
+            btnLogout.TabIndex = 0;
+            btnLogout.Text = "btnLogout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // button1
+            // lblLogout
             // 
-            button1.Location = new Point(1003, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(114, 32);
-            button1.TabIndex = 0;
-            button1.Text = "btnLogout";
-            button1.UseVisualStyleBackColor = true;
+            lblLogout.AutoSize = true;
+            lblLogout.Location = new Point(949, 34);
+            lblLogout.Name = "lblLogout";
+            lblLogout.Size = new Size(48, 16);
+            lblLogout.TabIndex = 3;
+            lblLogout.Text = "Logout";
             // 
-            // label2
+            // panelMenu
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(939, 34);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 16);
-            label2.TabIndex = 3;
-            label2.Text = "label2";
+            panelMenu.Controls.Add(btnMajorMenu);
+            panelMenu.Controls.Add(btnUniversityMenu);
+            panelMenu.Controls.Add(btnScoreMenu);
+            panelMenu.Controls.Add(lblLogout);
+            panelMenu.Controls.Add(btnQuizMenu);
+            panelMenu.Controls.Add(btnLogout);
+            panelMenu.Dock = DockStyle.Top;
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(1152, 76);
+            panelMenu.TabIndex = 0;
             // 
-            // panel1
+            // btnMajorMenu
             // 
-            panel1.Controls.Add(btnUpdate);
-            panel1.Controls.Add(btnDelete);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(btnAdd);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 76);
-            panel1.TabIndex = 0;
+            btnMajorMenu.Location = new Point(756, 19);
+            btnMajorMenu.Name = "btnMajorMenu";
+            btnMajorMenu.Size = new Size(165, 46);
+            btnMajorMenu.TabIndex = 6;
+            btnMajorMenu.Text = "Quản lý ngành ";
+            btnMajorMenu.UseVisualStyleBackColor = true;
+            btnMajorMenu.Click += btnMajorMenu_Click;
+            btnMajorMenu.MouseLeave += btnMajorMenu_MouseLeave;
+            btnMajorMenu.MouseHover += btnMajorMenu_Click;
             // 
-            // btnUpdate
+            // btnUniversityMenu
             // 
-            btnUpdate.Location = new Point(690, 19);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(226, 46);
-            btnUpdate.TabIndex = 5;
-            btnUpdate.Text = "sua";
-            btnUpdate.UseVisualStyleBackColor = true;
-            btnUpdate.Click += btnUpdate_Click;
+            btnUniversityMenu.Location = new Point(577, 19);
+            btnUniversityMenu.Name = "btnUniversityMenu";
+            btnUniversityMenu.Size = new Size(173, 46);
+            btnUniversityMenu.TabIndex = 4;
+            btnUniversityMenu.Text = "Quản lý Trường";
+            btnUniversityMenu.UseVisualStyleBackColor = true;
+            btnUniversityMenu.Click += btnUniversityMenu_Click;
+            btnUniversityMenu.MouseLeave += btnUniversityMenu_MouseLeave;
+            btnUniversityMenu.MouseHover += btnUniversityMenu_Click;
             // 
-            // btnDelete
+            // btnScoreMenu
             // 
-            btnDelete.Location = new Point(458, 19);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(226, 46);
-            btnDelete.TabIndex = 4;
-            btnDelete.Text = "xoa";
-            btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += btnDelete_Click;
+            btnScoreMenu.Location = new Point(406, 19);
+            btnScoreMenu.Name = "btnScoreMenu";
+            btnScoreMenu.Size = new Size(165, 46);
+            btnScoreMenu.TabIndex = 5;
+            btnScoreMenu.Text = "Quản lý Điểm Thi";
+            btnScoreMenu.UseVisualStyleBackColor = true;
+            btnScoreMenu.Click += btnScoreMenu_Click;
+            btnScoreMenu.MouseLeave += btnScoreMenu_MouseLeave;
+            btnScoreMenu.MouseHover += btnScoreMenu_Click;
             // 
-            // btnAdd
+            // btnQuizMenu
             // 
-            btnAdd.Location = new Point(226, 19);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(226, 46);
-            btnAdd.TabIndex = 3;
-            btnAdd.Text = "them";
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
+            btnQuizMenu.Location = new Point(226, 19);
+            btnQuizMenu.Name = "btnQuizMenu";
+            btnQuizMenu.Size = new Size(174, 46);
+            btnQuizMenu.TabIndex = 3;
+            btnQuizMenu.Text = "Quản lý Quiz Tính Cách";
+            btnQuizMenu.UseVisualStyleBackColor = true;
+            btnQuizMenu.Click += btnQuizMenu_Click;
+            btnQuizMenu.MouseLeave += btnQuizMenu_MouseLeave;
+            btnQuizMenu.MouseHover += btnQuizMenu_Click;
             // 
-            // menuAdd
+            // quizContextMenu
             // 
-            menuAdd.AutoSize = false;
-            menuAdd.Items.AddRange(new ToolStripItem[] { ehheToolStripMenuItem, hihiToolStripMenuItem, toolStripMenuItem1 });
-            menuAdd.Name = "contextMenuStrip1";
-            menuAdd.Size = new Size(226, 160);
-            menuAdd.Text = "menuAdd";
+            quizContextMenu.AutoSize = false;
+            quizContextMenu.Items.AddRange(new ToolStripItem[] { ehheToolStripMenuItem, hihiToolStripMenuItem, toolStripMenuItem1 });
+            quizContextMenu.Name = "contextMenuStrip1";
+            quizContextMenu.Size = new Size(226, 160);
+            quizContextMenu.Text = "menuAdd";
+            quizContextMenu.MouseLeave += quizContextMenu_MouseLeave;
             // 
             // ehheToolStripMenuItem
             // 
             ehheToolStripMenuItem.AutoSize = false;
-            ehheToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nganhToolStripMenuItem, cauHoiToolStripMenuItem, truongToolStripMenuItem });
             ehheToolStripMenuItem.Font = new Font("Segoe UI", 12F);
             ehheToolStripMenuItem.Name = "ehheToolStripMenuItem";
             ehheToolStripMenuItem.Size = new Size(226, 46);
-            ehheToolStripMenuItem.Text = "Tinh Cach";
-            // 
-            // nganhToolStripMenuItem
-            // 
-            nganhToolStripMenuItem.AutoSize = false;
-            nganhToolStripMenuItem.Name = "nganhToolStripMenuItem";
-            nganhToolStripMenuItem.Size = new Size(180, 46);
-            nganhToolStripMenuItem.Text = "bai kiem tra";
-            // 
-            // cauHoiToolStripMenuItem
-            // 
-            cauHoiToolStripMenuItem.AutoSize = false;
-            cauHoiToolStripMenuItem.Name = "cauHoiToolStripMenuItem";
-            cauHoiToolStripMenuItem.Size = new Size(180, 46);
-            cauHoiToolStripMenuItem.Text = "cau hoi";
-            // 
-            // truongToolStripMenuItem
-            // 
-            truongToolStripMenuItem.AutoSize = false;
-            truongToolStripMenuItem.Name = "truongToolStripMenuItem";
-            truongToolStripMenuItem.Size = new Size(180, 46);
-            truongToolStripMenuItem.Text = "ket qua";
+            ehheToolStripMenuItem.Text = "them cau hoi";
             // 
             // hihiToolStripMenuItem
             // 
             hihiToolStripMenuItem.AutoSize = false;
-            hihiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { hihiieToolStripMenuItem, phoDiemToolStripMenuItem });
             hihiToolStripMenuItem.Name = "hihiToolStripMenuItem";
             hihiToolStripMenuItem.Size = new Size(226, 46);
-            hihiToolStripMenuItem.Text = "Diem";
-            // 
-            // hihiieToolStripMenuItem
-            // 
-            hihiieToolStripMenuItem.AutoSize = false;
-            hihiieToolStripMenuItem.Name = "hihiieToolStripMenuItem";
-            hihiieToolStripMenuItem.Size = new Size(150, 50);
-            hihiieToolStripMenuItem.Text = "phuong thuc tinh diem";
-            // 
-            // phoDiemToolStripMenuItem
-            // 
-            phoDiemToolStripMenuItem.AutoSize = false;
-            phoDiemToolStripMenuItem.Name = "phoDiemToolStripMenuItem";
-            phoDiemToolStripMenuItem.Size = new Size(180, 46);
-            phoDiemToolStripMenuItem.Text = "pho diem";
+            hihiToolStripMenuItem.Text = "xoa cau hoi";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.AutoSize = false;
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { truongToolStripMenuItem1, nganhToolStripMenuItem1, phuongThucTuyenSinhToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(226, 46);
-            toolStripMenuItem1.Text = "Nganh&Truong";
+            toolStripMenuItem1.Text = "sua cau hoi";
             toolStripMenuItem1.ToolTipText = "huhu";
             // 
-            // truongToolStripMenuItem1
+            // lblLenKhung
             // 
-            truongToolStripMenuItem1.AutoSize = false;
-            truongToolStripMenuItem1.Name = "truongToolStripMenuItem1";
-            truongToolStripMenuItem1.Size = new Size(180, 46);
-            truongToolStripMenuItem1.Text = "truong";
+            lblLenKhung.AutoSize = true;
+            lblLenKhung.Location = new Point(500, 472);
+            lblLenKhung.Name = "lblLenKhung";
+            lblLenKhung.Size = new Size(160, 16);
+            lblLenKhung.TabIndex = 3;
+            lblLenKhung.Text = "khuong thanh len bi khung";
             // 
-            // nganhToolStripMenuItem1
+            // scoreContextMenu
             // 
-            nganhToolStripMenuItem1.AutoSize = false;
-            nganhToolStripMenuItem1.Name = "nganhToolStripMenuItem1";
-            nganhToolStripMenuItem1.Size = new Size(180, 46);
-            nganhToolStripMenuItem1.Text = "nganh";
-            // 
-            // phuongThucTuyenSinhToolStripMenuItem
-            // 
-            phuongThucTuyenSinhToolStripMenuItem.AutoSize = false;
-            phuongThucTuyenSinhToolStripMenuItem.Name = "phuongThucTuyenSinhToolStripMenuItem";
-            phuongThucTuyenSinhToolStripMenuItem.Size = new Size(180, 46);
-            phuongThucTuyenSinhToolStripMenuItem.Text = "phuong thuc tuyen sinh";
-            // 
-            // menuDelete
-            // 
-            menuDelete.AutoSize = false;
-            menuDelete.Items.AddRange(new ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem6, toolStripMenuItem9 });
-            menuDelete.Name = "contextMenuStrip1";
-            menuDelete.Size = new Size(226, 160);
-            menuDelete.Text = "contextMenuStrip1";
+            scoreContextMenu.AutoSize = false;
+            scoreContextMenu.Items.AddRange(new ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem3 });
+            scoreContextMenu.Name = "contextMenuStrip1";
+            scoreContextMenu.Size = new Size(226, 160);
+            scoreContextMenu.Text = "contextMenuStrip1";
+            scoreContextMenu.MouseLeave += scoreContextMenu_MouseLeave;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.AutoSize = false;
-            toolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem3, toolStripMenuItem4, toolStripMenuItem5 });
             toolStripMenuItem2.Font = new Font("Segoe UI", 12F);
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.Size = new Size(226, 46);
-            toolStripMenuItem2.Text = "Tinh Cach";
+            toolStripMenuItem2.Text = "them moi diem chuan";
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.AutoSize = false;
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(180, 46);
-            toolStripMenuItem3.Text = "bai kiem tra";
+            toolStripMenuItem3.Size = new Size(226, 46);
+            toolStripMenuItem3.Text = "them moi pho diem";
             // 
-            // toolStripMenuItem4
+            // majorContextMenu
             // 
-            toolStripMenuItem4.AutoSize = false;
-            toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(180, 46);
-            toolStripMenuItem4.Text = "cau hoi";
-            // 
-            // toolStripMenuItem5
-            // 
-            toolStripMenuItem5.AutoSize = false;
-            toolStripMenuItem5.Name = "toolStripMenuItem5";
-            toolStripMenuItem5.Size = new Size(180, 46);
-            toolStripMenuItem5.Text = "ket qua";
-            // 
-            // toolStripMenuItem6
-            // 
-            toolStripMenuItem6.AutoSize = false;
-            toolStripMenuItem6.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem7, toolStripMenuItem8 });
-            toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new Size(226, 46);
-            toolStripMenuItem6.Text = "Diem";
-            // 
-            // toolStripMenuItem7
-            // 
-            toolStripMenuItem7.AutoSize = false;
-            toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new Size(150, 50);
-            toolStripMenuItem7.Text = "phuong thuc tinh diem";
+            majorContextMenu.AutoSize = false;
+            majorContextMenu.Items.AddRange(new ToolStripItem[] { toolStripMenuItem8, toolStripMenuItem9, toolStripMenuItem10 });
+            majorContextMenu.Name = "contextMenuStrip1";
+            majorContextMenu.Size = new Size(226, 160);
+            majorContextMenu.Text = "contextMenuStrip1";
+            majorContextMenu.MouseLeave += majorContextMenu_MouseLeave;
             // 
             // toolStripMenuItem8
             // 
             toolStripMenuItem8.AutoSize = false;
+            toolStripMenuItem8.Font = new Font("Segoe UI", 12F);
             toolStripMenuItem8.Name = "toolStripMenuItem8";
-            toolStripMenuItem8.Size = new Size(180, 46);
-            toolStripMenuItem8.Text = "pho diem";
+            toolStripMenuItem8.Size = new Size(226, 46);
+            toolStripMenuItem8.Text = "them nganh";
             // 
             // toolStripMenuItem9
             // 
             toolStripMenuItem9.AutoSize = false;
-            toolStripMenuItem9.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem10, toolStripMenuItem11, toolStripMenuItem12 });
             toolStripMenuItem9.Name = "toolStripMenuItem9";
             toolStripMenuItem9.Size = new Size(226, 46);
-            toolStripMenuItem9.Text = "Nganh&Truong";
-            toolStripMenuItem9.ToolTipText = "huhu";
+            toolStripMenuItem9.Text = "xoa nganh";
             // 
             // toolStripMenuItem10
             // 
             toolStripMenuItem10.AutoSize = false;
             toolStripMenuItem10.Name = "toolStripMenuItem10";
-            toolStripMenuItem10.Size = new Size(180, 46);
-            toolStripMenuItem10.Text = "truong";
+            toolStripMenuItem10.Size = new Size(226, 46);
+            toolStripMenuItem10.Text = "sua nganh";
+            toolStripMenuItem10.ToolTipText = "huhu";
             // 
-            // toolStripMenuItem11
+            // universityContextMenu
             // 
-            toolStripMenuItem11.AutoSize = false;
-            toolStripMenuItem11.Name = "toolStripMenuItem11";
-            toolStripMenuItem11.Size = new Size(180, 46);
-            toolStripMenuItem11.Text = "nganh";
+            universityContextMenu.AutoSize = false;
+            universityContextMenu.Items.AddRange(new ToolStripItem[] { toolStripMenuItem5, toolStripMenuItem6, toolStripMenuItem7 });
+            universityContextMenu.Name = "contextMenuStrip1";
+            universityContextMenu.Size = new Size(226, 160);
+            universityContextMenu.Text = "contextMenuStrip1";
+            universityContextMenu.MouseLeave += universityContextMenu_MouseLeave;
             // 
-            // toolStripMenuItem12
+            // toolStripMenuItem5
             // 
-            toolStripMenuItem12.AutoSize = false;
-            toolStripMenuItem12.Name = "toolStripMenuItem12";
-            toolStripMenuItem12.Size = new Size(180, 46);
-            toolStripMenuItem12.Text = "phuong thuc tuyen sinh";
+            toolStripMenuItem5.AutoSize = false;
+            toolStripMenuItem5.Font = new Font("Segoe UI", 12F);
+            toolStripMenuItem5.Name = "toolStripMenuItem5";
+            toolStripMenuItem5.Size = new Size(226, 46);
+            toolStripMenuItem5.Text = "them truong";
             // 
-            // menuUpdate
+            // toolStripMenuItem6
             // 
-            menuUpdate.AutoSize = false;
-            menuUpdate.Items.AddRange(new ToolStripItem[] { toolStripMenuItem13, toolStripMenuItem17, toolStripMenuItem20 });
-            menuUpdate.Name = "contextMenuStrip1";
-            menuUpdate.Size = new Size(226, 160);
-            menuUpdate.Text = "contextMenuStrip1";
+            toolStripMenuItem6.AutoSize = false;
+            toolStripMenuItem6.Name = "toolStripMenuItem6";
+            toolStripMenuItem6.Size = new Size(226, 46);
+            toolStripMenuItem6.Text = "xoa truong";
             // 
-            // toolStripMenuItem13
+            // toolStripMenuItem7
             // 
-            toolStripMenuItem13.AutoSize = false;
-            toolStripMenuItem13.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem14, toolStripMenuItem15, toolStripMenuItem16 });
-            toolStripMenuItem13.Font = new Font("Segoe UI", 12F);
-            toolStripMenuItem13.Name = "toolStripMenuItem13";
-            toolStripMenuItem13.Size = new Size(226, 46);
-            toolStripMenuItem13.Text = "Tinh Cach";
+            toolStripMenuItem7.AutoSize = false;
+            toolStripMenuItem7.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem14, toolStripMenuItem15, toolStripMenuItem16 });
+            toolStripMenuItem7.Name = "toolStripMenuItem7";
+            toolStripMenuItem7.Size = new Size(226, 46);
+            toolStripMenuItem7.Text = "sua truong";
+            toolStripMenuItem7.ToolTipText = "huhu";
             // 
             // toolStripMenuItem14
             // 
             toolStripMenuItem14.AutoSize = false;
             toolStripMenuItem14.Name = "toolStripMenuItem14";
             toolStripMenuItem14.Size = new Size(180, 46);
-            toolStripMenuItem14.Text = "bai kiem tra";
+            toolStripMenuItem14.Text = "truong";
             // 
             // toolStripMenuItem15
             // 
             toolStripMenuItem15.AutoSize = false;
             toolStripMenuItem15.Name = "toolStripMenuItem15";
             toolStripMenuItem15.Size = new Size(180, 46);
-            toolStripMenuItem15.Text = "cau hoi";
+            toolStripMenuItem15.Text = "nganh";
             // 
             // toolStripMenuItem16
             // 
             toolStripMenuItem16.AutoSize = false;
             toolStripMenuItem16.Name = "toolStripMenuItem16";
             toolStripMenuItem16.Size = new Size(180, 46);
-            toolStripMenuItem16.Text = "ket qua";
-            // 
-            // toolStripMenuItem17
-            // 
-            toolStripMenuItem17.AutoSize = false;
-            toolStripMenuItem17.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem18, toolStripMenuItem19 });
-            toolStripMenuItem17.Name = "toolStripMenuItem17";
-            toolStripMenuItem17.Size = new Size(226, 46);
-            toolStripMenuItem17.Text = "Diem";
-            // 
-            // toolStripMenuItem18
-            // 
-            toolStripMenuItem18.AutoSize = false;
-            toolStripMenuItem18.Name = "toolStripMenuItem18";
-            toolStripMenuItem18.Size = new Size(150, 50);
-            toolStripMenuItem18.Text = "phuong thuc tinh diem";
-            // 
-            // toolStripMenuItem19
-            // 
-            toolStripMenuItem19.AutoSize = false;
-            toolStripMenuItem19.Name = "toolStripMenuItem19";
-            toolStripMenuItem19.Size = new Size(180, 46);
-            toolStripMenuItem19.Text = "pho diem";
-            // 
-            // toolStripMenuItem20
-            // 
-            toolStripMenuItem20.AutoSize = false;
-            toolStripMenuItem20.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem21, toolStripMenuItem22, toolStripMenuItem23 });
-            toolStripMenuItem20.Name = "toolStripMenuItem20";
-            toolStripMenuItem20.Size = new Size(226, 46);
-            toolStripMenuItem20.Text = "Nganh&Truong";
-            toolStripMenuItem20.ToolTipText = "huhu";
-            // 
-            // toolStripMenuItem21
-            // 
-            toolStripMenuItem21.AutoSize = false;
-            toolStripMenuItem21.Name = "toolStripMenuItem21";
-            toolStripMenuItem21.Size = new Size(180, 46);
-            toolStripMenuItem21.Text = "truong";
-            // 
-            // toolStripMenuItem22
-            // 
-            toolStripMenuItem22.AutoSize = false;
-            toolStripMenuItem22.Name = "toolStripMenuItem22";
-            toolStripMenuItem22.Size = new Size(180, 46);
-            toolStripMenuItem22.Text = "nganh";
-            // 
-            // toolStripMenuItem23
-            // 
-            toolStripMenuItem23.AutoSize = false;
-            toolStripMenuItem23.Name = "toolStripMenuItem23";
-            toolStripMenuItem23.Size = new Size(180, 46);
-            toolStripMenuItem23.Text = "phuong thuc tuyen sinh";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(306, 464);
-            label16.Name = "label16";
-            label16.Size = new Size(160, 16);
-            label16.TabIndex = 3;
-            label16.Text = "khuong thanh len bi khung";
+            toolStripMenuItem16.Text = "phuong thuc tuyen sinh";
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 778);
-            Controls.Add(label16);
+            Controls.Add(lblLenKhung);
             Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(panelMenu);
             Font = new Font("Microsoft Sans Serif", 9.75F);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             panel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            menuAdd.ResumeLayout(false);
-            menuDelete.ResumeLayout(false);
-            menuUpdate.ResumeLayout(false);
+            panelMenu.ResumeLayout(false);
+            panelMenu.PerformLayout();
+            quizContextMenu.ResumeLayout(false);
+            scoreContextMenu.ResumeLayout(false);
+            majorContextMenu.ResumeLayout(false);
+            universityContextMenu.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
         private Panel panel2;
-        private Label label1;
-        private Label label4;
-        private Label label5;
-        private Label label3;
-        private Label label10;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label6;
-        private Button button1;
-        private Label label2;
-        private Panel panel1;
-        private Button btnAdd;
-        private ContextMenuStrip menuAdd;
+        private Label h2KhamPhaBanThan;
+        private Label lblQuiz;
+        private Label lblQuizResults;
+        private Label h2DanhGiaDiemThi;
+        private Label lblScoreConversion;
+        private Label lblScorePercentile;
+        private Label lblInputScore;
+        private Label lblMajorByInterest;
+        private Label lblMajorRecommend;
+        private Label lblMajorByScore;
+        private Label lblMajorByBlock;
+        private Label h2TraCuuNganhTruong;
+        private Label lblScoreManagement;
+        private Button btnLogout;
+        private Label lblLogout;
+        private Panel panelMenu;
+
+        private ContextMenuStrip quizContextMenu;
         private ToolStripMenuItem ehheToolStripMenuItem;
         private ToolStripMenuItem hihiToolStripMenuItem;
         #region Windows Form Designer generated code
@@ -653,41 +548,25 @@
 
         #endregion
 
-        private Button btnUpdate;
-        private Button btnDelete;
-        private ToolStripMenuItem hihiieToolStripMenuItem;
+        private Button btnQuizMenu;
+        private Button btnScoreMenu;
+        private Button btnUniversityMenu;
+        private Button btnMajorMenu;
         private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem nganhToolStripMenuItem;
-        private ToolStripMenuItem truongToolStripMenuItem;
-        private ToolStripMenuItem cauHoiToolStripMenuItem;
-        private ToolStripMenuItem truongToolStripMenuItem1;
-        private ToolStripMenuItem nganhToolStripMenuItem1;
-        private ToolStripMenuItem phoDiemToolStripMenuItem;
-        private ToolStripMenuItem phuongThucTuyenSinhToolStripMenuItem;
-        private ContextMenuStrip menuDelete;
+        private Label lblLenKhung;
+        private ContextMenuStrip scoreContextMenu;
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItem3;
-        private ToolStripMenuItem toolStripMenuItem4;
-        private ToolStripMenuItem toolStripMenuItem5;
-        private ToolStripMenuItem toolStripMenuItem6;
-        private ToolStripMenuItem toolStripMenuItem7;
+        private ContextMenuStrip majorContextMenu;
         private ToolStripMenuItem toolStripMenuItem8;
         private ToolStripMenuItem toolStripMenuItem9;
         private ToolStripMenuItem toolStripMenuItem10;
-        private ToolStripMenuItem toolStripMenuItem11;
-        private ToolStripMenuItem toolStripMenuItem12;
-        private ContextMenuStrip menuUpdate;
-        private ToolStripMenuItem toolStripMenuItem13;
+        private ContextMenuStrip universityContextMenu;
+        private ToolStripMenuItem toolStripMenuItem5;
+        private ToolStripMenuItem toolStripMenuItem6;
+        private ToolStripMenuItem toolStripMenuItem7;
         private ToolStripMenuItem toolStripMenuItem14;
         private ToolStripMenuItem toolStripMenuItem15;
         private ToolStripMenuItem toolStripMenuItem16;
-        private ToolStripMenuItem toolStripMenuItem17;
-        private ToolStripMenuItem toolStripMenuItem18;
-        private ToolStripMenuItem toolStripMenuItem19;
-        private ToolStripMenuItem toolStripMenuItem20;
-        private ToolStripMenuItem toolStripMenuItem21;
-        private ToolStripMenuItem toolStripMenuItem22;
-        private ToolStripMenuItem toolStripMenuItem23;
-        private Label label16;
     }
 }
