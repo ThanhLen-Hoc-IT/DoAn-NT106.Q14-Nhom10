@@ -1,14 +1,16 @@
-﻿namespace UniGate.Client
+﻿using System.Xml.Linq;
+
+namespace UniGate.Client
 {
     partial class frmMain
     {
         /// <summary>
-        /// Required designer variable.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -21,304 +23,294 @@
         }
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             panel2 = new Panel();
-            label11 = new Label();
-            label12 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label15 = new Label();
-            label6 = new Label();
-            label10 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label3 = new Label();
-            label1 = new Label();
-            button1 = new Button();
-            label2 = new Label();
-            panel1 = new Panel();
-            button2 = new Button();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            ehheToolStripMenuItem = new ToolStripMenuItem();
-            hihiToolStripMenuItem = new ToolStripMenuItem();
+            lblMajorByInterest = new Label();
+            lblMajorRecommend = new Label();
+            lblMajorByBlock = new Label();
+            lblMajorByScore = new Label();
+            h2TraCuuNganhTruong = new Label();
+            lblScoreManagement = new Label();
+            lblScoreConversion = new Label();
+            lblScorePercentile = new Label();
+            lblInputScore = new Label();
+            h2DanhGiaDiemThi = new Label();
+            lblQuiz = new Label();
+            lblQuizResults = new Label();
+            h2KhamPhaBanThan = new Label();
+            btnLogout = new Button();
+            lblLogout = new Label();
+            panelMenu = new Panel();
+            lblLenKhung = new Label();
             panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            contextMenuStrip1.SuspendLayout();
+            panelMenu.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
             // 
-            panel2.Controls.Add(label11);
-            panel2.Controls.Add(label12);
-            panel2.Controls.Add(label14);
-            panel2.Controls.Add(label13);
-            panel2.Controls.Add(label15);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label1);
+            panel2.Controls.Add(lblMajorByInterest);
+            panel2.Controls.Add(lblMajorRecommend);
+            panel2.Controls.Add(lblMajorByBlock);
+            panel2.Controls.Add(lblMajorByScore);
+            panel2.Controls.Add(h2TraCuuNganhTruong);
+            panel2.Controls.Add(lblScoreManagement);
+            panel2.Controls.Add(lblScoreConversion);
+            panel2.Controls.Add(lblScorePercentile);
+            panel2.Controls.Add(lblInputScore);
+            panel2.Controls.Add(h2DanhGiaDiemThi);
+            panel2.Controls.Add(lblQuiz);
+            panel2.Controls.Add(lblQuizResults);
+            panel2.Controls.Add(h2KhamPhaBanThan);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 76);
             panel2.Name = "panel2";
             panel2.Size = new Size(229, 702);
             panel2.TabIndex = 1;
             // 
-            // label11
+            // lblMajorByInterest
             // 
-            label11.BackColor = SystemColors.ControlLightLight;
-            label11.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label11.Location = new Point(-1, 428);
-            label11.Name = "label11";
-            label11.Size = new Size(226, 46);
-            label11.TabIndex = 23;
-            label11.Text = "Ngành Theo Sở Thích";
-            label11.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByInterest.BackColor = SystemColors.ControlLightLight;
+            lblMajorByInterest.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByInterest.Location = new Point(-1, 428);
+            lblMajorByInterest.Name = "lblMajorByInterest";
+            lblMajorByInterest.Size = new Size(226, 46);
+            lblMajorByInterest.TabIndex = 23;
+            lblMajorByInterest.Text = "Ngành Theo Sở Thích";
+            lblMajorByInterest.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByInterest.Click += lblMajorByInterest_Click;
+            lblMajorByInterest.MouseEnter += Label_MouseEnter;
+            lblMajorByInterest.MouseLeave += Label_MouseLeave;
             // 
-            // label12
+            // lblMajorRecommend
             // 
-            label12.BackColor = SystemColors.ControlLightLight;
-            label12.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label12.Location = new Point(-3, 570);
-            label12.Name = "label12";
-            label12.Size = new Size(226, 46);
-            label12.TabIndex = 22;
-            label12.Text = "Ngành Phù hợp";
-            label12.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorRecommend.BackColor = SystemColors.ControlLightLight;
+            lblMajorRecommend.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorRecommend.Location = new Point(-3, 570);
+            lblMajorRecommend.Name = "lblMajorRecommend";
+            lblMajorRecommend.Size = new Size(226, 46);
+            lblMajorRecommend.TabIndex = 22;
+            lblMajorRecommend.Text = "Ngành Phù hợp";
+            lblMajorRecommend.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorRecommend.Click += lblMajorRecommend_Click;
+            lblMajorRecommend.MouseEnter += Label_MouseEnter;
+            lblMajorRecommend.MouseLeave += Label_MouseLeave;
             // 
-            // label14
+            // lblMajorByBlock
             // 
-            label14.BackColor = SystemColors.ControlLightLight;
-            label14.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label14.Location = new Point(-3, 520);
-            label14.Name = "label14";
-            label14.Size = new Size(226, 46);
-            label14.TabIndex = 20;
-            label14.Text = "Ngành Theo Khối";
-            label14.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByBlock.BackColor = SystemColors.ControlLightLight;
+            lblMajorByBlock.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByBlock.Location = new Point(-3, 520);
+            lblMajorByBlock.Name = "lblMajorByBlock";
+            lblMajorByBlock.Size = new Size(226, 46);
+            lblMajorByBlock.TabIndex = 20;
+            lblMajorByBlock.Text = "Ngành Theo Khối";
+            lblMajorByBlock.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByBlock.Click += lblMajorByBlock_Click;
+            lblMajorByBlock.MouseEnter += Label_MouseEnter;
+            lblMajorByBlock.MouseLeave += Label_MouseLeave;
             // 
-            // label13
+            // lblMajorByScore
             // 
-            label13.BackColor = SystemColors.ControlLightLight;
-            label13.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label13.Location = new Point(-3, 474);
-            label13.Name = "label13";
-            label13.Size = new Size(226, 46);
-            label13.TabIndex = 21;
-            label13.Text = "Ngành Theo Điểm";
-            label13.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByScore.BackColor = SystemColors.ControlLightLight;
+            lblMajorByScore.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblMajorByScore.Location = new Point(-3, 474);
+            lblMajorByScore.Name = "lblMajorByScore";
+            lblMajorByScore.Size = new Size(226, 46);
+            lblMajorByScore.TabIndex = 21;
+            lblMajorByScore.Text = "Ngành Theo Điểm";
+            lblMajorByScore.TextAlign = ContentAlignment.MiddleLeft;
+            lblMajorByScore.Click += lblMajorByScore_Click;
+            lblMajorByScore.MouseEnter += Label_MouseEnter;
+            lblMajorByScore.MouseLeave += Label_MouseLeave;
             // 
-            // label15
+            // h2TraCuuNganhTruong
             // 
-            label15.BackColor = SystemColors.ControlLightLight;
-            label15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label15.Location = new Point(-1, 380);
-            label15.Name = "label15";
-            label15.Size = new Size(226, 46);
-            label15.TabIndex = 19;
-            label15.Text = "Tra cứu Ngành & Trường";
-            label15.TextAlign = ContentAlignment.MiddleLeft;
+            h2TraCuuNganhTruong.BackColor = SystemColors.ControlLightLight;
+            h2TraCuuNganhTruong.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            h2TraCuuNganhTruong.Location = new Point(-1, 380);
+            h2TraCuuNganhTruong.Name = "h2TraCuuNganhTruong";
+            h2TraCuuNganhTruong.Size = new Size(226, 46);
+            h2TraCuuNganhTruong.TabIndex = 19;
+            h2TraCuuNganhTruong.Text = "Tra cứu Ngành & Trường";
+            h2TraCuuNganhTruong.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lblScoreManagement
             // 
-            label6.BackColor = SystemColors.ControlLightLight;
-            label6.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label6.Location = new Point(1, 242);
-            label6.Name = "label6";
-            label6.Size = new Size(226, 46);
-            label6.TabIndex = 18;
-            label6.Text = "Quản lý Điểm thi";
-            label6.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreManagement.BackColor = SystemColors.ControlLightLight;
+            lblScoreManagement.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScoreManagement.Location = new Point(1, 242);
+            lblScoreManagement.Name = "lblScoreManagement";
+            lblScoreManagement.Size = new Size(226, 46);
+            lblScoreManagement.TabIndex = 18;
+            lblScoreManagement.Text = "Quản lý Điểm thi";
+            lblScoreManagement.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreManagement.Click += lblScoreManagement_Click;
+            lblScoreManagement.MouseEnter += Label_MouseEnter;
+            lblScoreManagement.MouseLeave += Label_MouseLeave;
             // 
-            // label10
+            // lblScoreConversion
             // 
-            label10.BackColor = SystemColors.ControlLightLight;
-            label10.Location = new Point(-1, 717);
-            label10.Name = "label10";
-            label10.Size = new Size(226, 46);
-            label10.TabIndex = 17;
-            label10.Text = "lable1";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            lblScoreConversion.BackColor = SystemColors.ControlLightLight;
+            lblScoreConversion.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScoreConversion.Location = new Point(-1, 334);
+            lblScoreConversion.Name = "lblScoreConversion";
+            lblScoreConversion.Size = new Size(226, 46);
+            lblScoreConversion.TabIndex = 8;
+            lblScoreConversion.Text = "quy doi diem";
+            lblScoreConversion.TextAlign = ContentAlignment.MiddleLeft;
+            lblScoreConversion.Click += lblScoreConversion_Click;
+            lblScoreConversion.MouseEnter += Label_MouseEnter;
+            lblScoreConversion.MouseLeave += Label_MouseLeave;
             // 
-            // label7
+            // lblScorePercentile
             // 
-            label7.BackColor = SystemColors.ControlLightLight;
-            label7.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label7.Location = new Point(-1, 334);
-            label7.Name = "label7";
-            label7.Size = new Size(226, 46);
-            label7.TabIndex = 8;
-            label7.Text = "quy doi diem";
-            label7.TextAlign = ContentAlignment.MiddleLeft;
+            lblScorePercentile.BackColor = SystemColors.ControlLightLight;
+            lblScorePercentile.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblScorePercentile.Location = new Point(1, 288);
+            lblScorePercentile.Name = "lblScorePercentile";
+            lblScorePercentile.Size = new Size(226, 46);
+            lblScorePercentile.TabIndex = 7;
+            lblScorePercentile.Text = "xem phanvi/trung vi";
+            lblScorePercentile.TextAlign = ContentAlignment.MiddleLeft;
+            lblScorePercentile.Click += lblScorePercentile_Click;
+            lblScorePercentile.MouseEnter += Label_MouseEnter;
+            lblScorePercentile.MouseLeave += Label_MouseLeave;
             // 
-            // label8
+            // lblInputScore
             // 
-            label8.BackColor = SystemColors.ControlLightLight;
-            label8.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label8.Location = new Point(1, 288);
-            label8.Name = "label8";
-            label8.Size = new Size(226, 46);
-            label8.TabIndex = 7;
-            label8.Text = "xem phanvi/trung vi";
-            label8.TextAlign = ContentAlignment.MiddleLeft;
+            lblInputScore.BackColor = SystemColors.ControlLightLight;
+            lblInputScore.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblInputScore.Location = new Point(1, 192);
+            lblInputScore.Name = "lblInputScore";
+            lblInputScore.Size = new Size(226, 46);
+            lblInputScore.TabIndex = 6;
+            lblInputScore.Text = "nhap diem";
+            lblInputScore.TextAlign = ContentAlignment.MiddleLeft;
+            lblInputScore.Click += lblInputScore_Click;
+            lblInputScore.MouseEnter += Label_MouseEnter;
+            lblInputScore.MouseLeave += Label_MouseLeave;
             // 
-            // label9
+            // h2DanhGiaDiemThi
             // 
-            label9.BackColor = SystemColors.ControlLightLight;
-            label9.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label9.Location = new Point(1, 192);
-            label9.Name = "label9";
-            label9.Size = new Size(226, 46);
-            label9.TabIndex = 6;
-            label9.Text = "nhap diem";
-            label9.TextAlign = ContentAlignment.MiddleLeft;
+            h2DanhGiaDiemThi.BackColor = SystemColors.ControlLightLight;
+            h2DanhGiaDiemThi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            h2DanhGiaDiemThi.Location = new Point(1, 144);
+            h2DanhGiaDiemThi.Name = "h2DanhGiaDiemThi";
+            h2DanhGiaDiemThi.Size = new Size(226, 46);
+            h2DanhGiaDiemThi.TabIndex = 5;
+            h2DanhGiaDiemThi.Text = "Đánh giá Điểm thi";
+            h2DanhGiaDiemThi.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lblQuiz
             // 
-            label4.BackColor = SystemColors.ControlLightLight;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label4.Location = new Point(1, 144);
-            label4.Name = "label4";
-            label4.Size = new Size(226, 46);
-            label4.TabIndex = 5;
-            label4.Text = "Đánh giá Điểm thi";
-            label4.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuiz.BackColor = SystemColors.ControlLightLight;
+            lblQuiz.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblQuiz.Location = new Point(1, 48);
+            lblQuiz.Name = "lblQuiz";
+            lblQuiz.Size = new Size(226, 46);
+            lblQuiz.TabIndex = 4;
+            lblQuiz.Text = "trac nghiem tinh cach";
+            lblQuiz.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuiz.Click += lblQuiz_Click;
+            lblQuiz.MouseEnter += Label_MouseEnter;
+            lblQuiz.MouseLeave += Label_MouseLeave;
             // 
-            // label5
+            // lblQuizResults
             // 
-            label5.BackColor = SystemColors.ControlLightLight;
-            label5.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label5.Location = new Point(1, 48);
-            label5.Name = "label5";
-            label5.Size = new Size(226, 46);
-            label5.TabIndex = 4;
-            label5.Text = "trac nghiem tinh cach";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuizResults.BackColor = SystemColors.ControlLightLight;
+            lblQuizResults.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblQuizResults.Location = new Point(1, 96);
+            lblQuizResults.Name = "lblQuizResults";
+            lblQuizResults.Size = new Size(226, 46);
+            lblQuizResults.TabIndex = 3;
+            lblQuizResults.Text = "ket qua";
+            lblQuizResults.TextAlign = ContentAlignment.MiddleLeft;
+            lblQuizResults.Click += lblQuizResults_Click;
+            lblQuizResults.MouseEnter += Label_MouseEnter;
+            lblQuizResults.MouseLeave += Label_MouseLeave;
             // 
-            // label3
+            // h2KhamPhaBanThan
             // 
-            label3.BackColor = SystemColors.ControlLightLight;
-            label3.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label3.Location = new Point(1, 96);
-            label3.Name = "label3";
-            label3.Size = new Size(226, 46);
-            label3.TabIndex = 3;
-            label3.Text = "ket qua";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            h2KhamPhaBanThan.BackColor = SystemColors.ControlLightLight;
+            h2KhamPhaBanThan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            h2KhamPhaBanThan.Location = new Point(1, 1);
+            h2KhamPhaBanThan.Name = "h2KhamPhaBanThan";
+            h2KhamPhaBanThan.Size = new Size(226, 46);
+            h2KhamPhaBanThan.TabIndex = 2;
+            h2KhamPhaBanThan.Text = "Khám phá Bản thân";
+            h2KhamPhaBanThan.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // btnLogout
             // 
-            label1.BackColor = SystemColors.ControlLightLight;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1, 1);
-            label1.Name = "label1";
-            label1.Size = new Size(226, 46);
-            label1.TabIndex = 2;
-            label1.Text = "Khám phá Bản thân";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(1003, 26);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(114, 32);
+            btnLogout.TabIndex = 0;
+            btnLogout.Text = "btnLogout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // button1
+            // lblLogout
             // 
-            button1.Location = new Point(1003, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(114, 32);
-            button1.TabIndex = 0;
-            button1.Text = "btnLogout";
-            button1.UseVisualStyleBackColor = true;
+            lblLogout.AutoSize = true;
+            lblLogout.Location = new Point(949, 34);
+            lblLogout.Name = "lblLogout";
+            lblLogout.Size = new Size(48, 16);
+            lblLogout.TabIndex = 3;
+            lblLogout.Text = "Logout";
             // 
-            // label2
+            // panelMenu
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(915, 34);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 16);
-            label2.TabIndex = 3;
-            label2.Text = "label2";
+            panelMenu.Controls.Add(lblLogout);
+            panelMenu.Controls.Add(btnLogout);
+            panelMenu.Dock = DockStyle.Top;
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(1152, 76);
+            panelMenu.TabIndex = 0;
             // 
-            // panel1
+            // lblLenKhung
             // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 76);
-            panel1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(49, 19);
-            button2.Name = "button2";
-            button2.Size = new Size(144, 47);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { ehheToolStripMenuItem, hihiToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(101, 48);
-            // 
-            // ehheToolStripMenuItem
-            // 
-            ehheToolStripMenuItem.Name = "ehheToolStripMenuItem";
-            ehheToolStripMenuItem.Size = new Size(100, 22);
-            ehheToolStripMenuItem.Text = "ehhe";
-            // 
-            // hihiToolStripMenuItem
-            // 
-            hihiToolStripMenuItem.Name = "hihiToolStripMenuItem";
-            hihiToolStripMenuItem.Size = new Size(100, 22);
-            hihiToolStripMenuItem.Text = "hihi";
+            lblLenKhung.AutoSize = true;
+            lblLenKhung.Location = new Point(500, 472);
+            lblLenKhung.Name = "lblLenKhung";
+            lblLenKhung.Size = new Size(160, 16);
+            lblLenKhung.TabIndex = 3;
+            lblLenKhung.Text = "khuong thanh len bi khung";
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1152, 778);
+            Controls.Add(lblLenKhung);
             Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(panelMenu);
             Font = new Font("Microsoft Sans Serif", 9.75F);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "admin";
             panel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            contextMenuStrip1.ResumeLayout(false);
+            panelMenu.ResumeLayout(false);
+            panelMenu.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
         private Panel panel2;
-        private Label label1;
-        private Label label4;
-        private Label label5;
-        private Label label3;
-        private Label label10;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label6;
-        private Button button1;
-        private Label label2;
-        private Panel panel1;
-        private Button button2;
-        private ContextMenuStrip contextMenuStrip1;
-        private ToolStripMenuItem ehheToolStripMenuItem;
-        private ToolStripMenuItem hihiToolStripMenuItem;
+        private Label h2KhamPhaBanThan;
+        private Label lblQuiz;
+        private Label lblQuizResults;
+        private Label h2DanhGiaDiemThi;
+        private Label lblScoreConversion;
+        private Label lblScorePercentile;
+        private Label lblInputScore;
+        private Label lblMajorByInterest;
+        private Label lblMajorRecommend;
+        private Label lblMajorByScore;
+        private Label lblMajorByBlock;
+        private Label h2TraCuuNganhTruong;
+        private Label lblScoreManagement;
+        private Button btnLogout;
+        private Label lblLogout;
+        private Panel panelMenu;
+        private Label lblLenKhung;
     }
 }
