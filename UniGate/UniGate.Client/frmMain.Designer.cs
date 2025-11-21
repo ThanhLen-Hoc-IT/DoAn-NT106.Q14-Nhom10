@@ -21,6 +21,7 @@ namespace UniGate.Client
             }
             base.Dispose(disposing);
         }
+
         private void InitializeComponent()
         {
             panel2 = new Panel();
@@ -70,9 +71,9 @@ namespace UniGate.Client
             // 
             lblMajorByInterest.BackColor = SystemColors.ControlLightLight;
             lblMajorByInterest.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblMajorByInterest.Location = new Point(-1, 428);
+            lblMajorByInterest.Location = new Point(0, 432);
             lblMajorByInterest.Name = "lblMajorByInterest";
-            lblMajorByInterest.Size = new Size(226, 46);
+            lblMajorByInterest.Size = new Size(229, 46);
             lblMajorByInterest.TabIndex = 23;
             lblMajorByInterest.Text = "Ngành Theo Sở Thích";
             lblMajorByInterest.TextAlign = ContentAlignment.MiddleLeft;
@@ -84,9 +85,9 @@ namespace UniGate.Client
             // 
             lblMajorRecommend.BackColor = SystemColors.ControlLightLight;
             lblMajorRecommend.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblMajorRecommend.Location = new Point(-3, 570);
+            lblMajorRecommend.Location = new Point(0, 576);
             lblMajorRecommend.Name = "lblMajorRecommend";
-            lblMajorRecommend.Size = new Size(226, 46);
+            lblMajorRecommend.Size = new Size(229, 46);
             lblMajorRecommend.TabIndex = 22;
             lblMajorRecommend.Text = "Ngành Phù hợp";
             lblMajorRecommend.TextAlign = ContentAlignment.MiddleLeft;
@@ -98,9 +99,9 @@ namespace UniGate.Client
             // 
             lblMajorByBlock.BackColor = SystemColors.ControlLightLight;
             lblMajorByBlock.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblMajorByBlock.Location = new Point(-3, 520);
+            lblMajorByBlock.Location = new Point(0, 528);
             lblMajorByBlock.Name = "lblMajorByBlock";
-            lblMajorByBlock.Size = new Size(226, 46);
+            lblMajorByBlock.Size = new Size(229, 46);
             lblMajorByBlock.TabIndex = 20;
             lblMajorByBlock.Text = "Ngành Theo Khối";
             lblMajorByBlock.TextAlign = ContentAlignment.MiddleLeft;
@@ -112,9 +113,9 @@ namespace UniGate.Client
             // 
             lblMajorByScore.BackColor = SystemColors.ControlLightLight;
             lblMajorByScore.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblMajorByScore.Location = new Point(-3, 474);
+            lblMajorByScore.Location = new Point(0, 480);
             lblMajorByScore.Name = "lblMajorByScore";
-            lblMajorByScore.Size = new Size(226, 46);
+            lblMajorByScore.Size = new Size(229, 46);
             lblMajorByScore.TabIndex = 21;
             lblMajorByScore.Text = "Ngành Theo Điểm";
             lblMajorByScore.TextAlign = ContentAlignment.MiddleLeft;
@@ -126,9 +127,9 @@ namespace UniGate.Client
             // 
             h2TraCuuNganhTruong.BackColor = SystemColors.ControlLightLight;
             h2TraCuuNganhTruong.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            h2TraCuuNganhTruong.Location = new Point(-1, 380);
+            h2TraCuuNganhTruong.Location = new Point(0, 384);
             h2TraCuuNganhTruong.Name = "h2TraCuuNganhTruong";
-            h2TraCuuNganhTruong.Size = new Size(226, 46);
+            h2TraCuuNganhTruong.Size = new Size(229, 46);
             h2TraCuuNganhTruong.TabIndex = 19;
             h2TraCuuNganhTruong.Text = "Tra cứu Ngành & Trường";
             h2TraCuuNganhTruong.TextAlign = ContentAlignment.MiddleLeft;
@@ -137,9 +138,9 @@ namespace UniGate.Client
             // 
             lblScoreManagement.BackColor = SystemColors.ControlLightLight;
             lblScoreManagement.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblScoreManagement.Location = new Point(1, 242);
+            lblScoreManagement.Location = new Point(0, 240);
             lblScoreManagement.Name = "lblScoreManagement";
-            lblScoreManagement.Size = new Size(226, 46);
+            lblScoreManagement.Size = new Size(229, 46);
             lblScoreManagement.TabIndex = 18;
             lblScoreManagement.Text = "Quản lý Điểm thi";
             lblScoreManagement.TextAlign = ContentAlignment.MiddleLeft;
@@ -151,9 +152,9 @@ namespace UniGate.Client
             // 
             lblScoreConversion.BackColor = SystemColors.ControlLightLight;
             lblScoreConversion.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblScoreConversion.Location = new Point(-1, 334);
+            lblScoreConversion.Location = new Point(0, 336);
             lblScoreConversion.Name = "lblScoreConversion";
-            lblScoreConversion.Size = new Size(226, 46);
+            lblScoreConversion.Size = new Size(229, 46);
             lblScoreConversion.TabIndex = 8;
             lblScoreConversion.Text = "quy doi diem";
             lblScoreConversion.TextAlign = ContentAlignment.MiddleLeft;
@@ -165,9 +166,9 @@ namespace UniGate.Client
             // 
             lblScorePercentile.BackColor = SystemColors.ControlLightLight;
             lblScorePercentile.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblScorePercentile.Location = new Point(1, 288);
+            lblScorePercentile.Location = new Point(0, 288);
             lblScorePercentile.Name = "lblScorePercentile";
-            lblScorePercentile.Size = new Size(226, 46);
+            lblScorePercentile.Size = new Size(229, 46);
             lblScorePercentile.TabIndex = 7;
             lblScorePercentile.Text = "xem phanvi/trung vi";
             lblScorePercentile.TextAlign = ContentAlignment.MiddleLeft;
@@ -179,9 +180,9 @@ namespace UniGate.Client
             // 
             lblInputScore.BackColor = SystemColors.ControlLightLight;
             lblInputScore.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblInputScore.Location = new Point(1, 192);
+            lblInputScore.Location = new Point(0, 192);
             lblInputScore.Name = "lblInputScore";
-            lblInputScore.Size = new Size(226, 46);
+            lblInputScore.Size = new Size(229, 46);
             lblInputScore.TabIndex = 6;
             lblInputScore.Text = "nhap diem";
             lblInputScore.TextAlign = ContentAlignment.MiddleLeft;
@@ -193,9 +194,9 @@ namespace UniGate.Client
             // 
             h2DanhGiaDiemThi.BackColor = SystemColors.ControlLightLight;
             h2DanhGiaDiemThi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            h2DanhGiaDiemThi.Location = new Point(1, 144);
+            h2DanhGiaDiemThi.Location = new Point(0, 144);
             h2DanhGiaDiemThi.Name = "h2DanhGiaDiemThi";
-            h2DanhGiaDiemThi.Size = new Size(226, 46);
+            h2DanhGiaDiemThi.Size = new Size(229, 46);
             h2DanhGiaDiemThi.TabIndex = 5;
             h2DanhGiaDiemThi.Text = "Đánh giá Điểm thi";
             h2DanhGiaDiemThi.TextAlign = ContentAlignment.MiddleLeft;
@@ -204,9 +205,9 @@ namespace UniGate.Client
             // 
             lblQuiz.BackColor = SystemColors.ControlLightLight;
             lblQuiz.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblQuiz.Location = new Point(1, 48);
+            lblQuiz.Location = new Point(0, 48);
             lblQuiz.Name = "lblQuiz";
-            lblQuiz.Size = new Size(226, 46);
+            lblQuiz.Size = new Size(229, 46);
             lblQuiz.TabIndex = 4;
             lblQuiz.Text = "trac nghiem tinh cach";
             lblQuiz.TextAlign = ContentAlignment.MiddleLeft;
@@ -218,9 +219,9 @@ namespace UniGate.Client
             // 
             lblQuizResults.BackColor = SystemColors.ControlLightLight;
             lblQuizResults.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblQuizResults.Location = new Point(1, 96);
+            lblQuizResults.Location = new Point(0, 96);
             lblQuizResults.Name = "lblQuizResults";
-            lblQuizResults.Size = new Size(226, 46);
+            lblQuizResults.Size = new Size(229, 46);
             lblQuizResults.TabIndex = 3;
             lblQuizResults.Text = "ket qua";
             lblQuizResults.TextAlign = ContentAlignment.MiddleLeft;
@@ -232,34 +233,38 @@ namespace UniGate.Client
             // 
             h2KhamPhaBanThan.BackColor = SystemColors.ControlLightLight;
             h2KhamPhaBanThan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            h2KhamPhaBanThan.Location = new Point(1, 1);
+            h2KhamPhaBanThan.Location = new Point(0, 0);
             h2KhamPhaBanThan.Name = "h2KhamPhaBanThan";
-            h2KhamPhaBanThan.Size = new Size(226, 46);
+            h2KhamPhaBanThan.Size = new Size(229, 46);
             h2KhamPhaBanThan.TabIndex = 2;
             h2KhamPhaBanThan.Text = "Khám phá Bản thân";
             h2KhamPhaBanThan.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btnLogout
             // 
-            btnLogout.Location = new Point(1003, 26);
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLogout.Location = new Point(1035, 22);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(114, 32);
             btnLogout.TabIndex = 0;
-            btnLogout.Text = "btnLogout";
+            btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
             btnLogout.Click += btnLogout_Click;
             // 
             // lblLogout
             // 
+            lblLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblLogout.AutoSize = true;
-            lblLogout.Location = new Point(949, 34);
+            lblLogout.Location = new Point(981, 30);
             lblLogout.Name = "lblLogout";
             lblLogout.Size = new Size(48, 16);
             lblLogout.TabIndex = 3;
             lblLogout.Text = "Logout";
+            lblLogout.Visible = false;
             // 
             // panelMenu
             // 
+            panelMenu.BackColor = SystemColors.ControlLightLight;
             panelMenu.Controls.Add(lblLogout);
             panelMenu.Controls.Add(btnLogout);
             panelMenu.Dock = DockStyle.Top;
@@ -271,7 +276,7 @@ namespace UniGate.Client
             // lblLenKhung
             // 
             lblLenKhung.AutoSize = true;
-            lblLenKhung.Location = new Point(500, 472);
+            lblLenKhung.Location = new Point(564, 154);
             lblLenKhung.Name = "lblLenKhung";
             lblLenKhung.Size = new Size(160, 16);
             lblLenKhung.TabIndex = 3;
@@ -294,6 +299,7 @@ namespace UniGate.Client
             ResumeLayout(false);
             PerformLayout();
         }
+
         private Panel panel2;
         private Label h2KhamPhaBanThan;
         private Label lblQuiz;
