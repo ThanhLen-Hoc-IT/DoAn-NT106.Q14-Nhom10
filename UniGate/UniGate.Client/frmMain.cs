@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks.Dataflow;
 using System.Drawing;
+using UniGate.Client.Forms.TraCuuNganhTruong;
 
 namespace UniGate.Client
 {
@@ -43,6 +44,9 @@ namespace UniGate.Client
         private void lblMajorByInterest_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You clicked the Major By Interest label!");
+            NganhTheoSoThich nganhTheoSoThichForm = new NganhTheoSoThich();
+            nganhTheoSoThichForm.Show();
+
         }
         private void lblMajorByScore_Click(object sender, EventArgs e)
         {
@@ -57,6 +61,8 @@ namespace UniGate.Client
         private void lblMajorRecommend_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You clicked the Major Recommend label!");
+            NganhPhuHop nganhPhuHopForm = new NganhPhuHop();
+            nganhPhuHopForm.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
