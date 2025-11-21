@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\FormChonKhoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormNganhTheoKhoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
