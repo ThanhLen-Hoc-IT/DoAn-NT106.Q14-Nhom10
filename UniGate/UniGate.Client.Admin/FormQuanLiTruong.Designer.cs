@@ -1,6 +1,6 @@
 ﻿namespace UniGate.Client.Admin
 {
-    partial class FormUniversityList
+    partial class FormQuanLiTruong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUniversityList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuanLiTruong));
             label1 = new Label();
             lblKhoiDaChon = new Label();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            txtSearch = new TextBox();
             btnSearch = new Button();
-            btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            lvSchools = new ListView();
+            btnAdd = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,11 +46,11 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Segoe UI Black", 13.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Brown;
-            label1.Location = new Point(285, 43);
+            label1.Location = new Point(388, 38);
             label1.Name = "label1";
-            label1.Size = new Size(515, 52);
+            label1.Size = new Size(316, 52);
             label1.TabIndex = 3;
-            label1.Text = "Danh Sách Trường Đại Học\r\n";
+            label1.Text = "Quản Lý Trường";
             // 
             // lblKhoiDaChon
             // 
@@ -64,22 +63,13 @@
             lblKhoiDaChon.TabIndex = 4;
             lblKhoiDaChon.Text = "Tìm Kiếm:";
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.Location = new Point(270, 133);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(505, 56);
-            textBox1.TabIndex = 5;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(86, 222);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(609, 300);
-            dataGridView1.TabIndex = 6;
+            txtSearch.Location = new Point(270, 133);
+            txtSearch.Multiline = true;
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(505, 56);
+            txtSearch.TabIndex = 5;
             // 
             // btnSearch
             // 
@@ -90,54 +80,66 @@
             btnSearch.TabIndex = 7;
             btnSearch.Text = "Tìm";
             btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            btnAdd.Font = new Font("Segoe UI Black", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAdd.Location = new Point(765, 247);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(150, 55);
-            btnAdd.TabIndex = 8;
-            btnAdd.Text = "Thêm";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // btnEdit
             // 
             btnEdit.Font = new Font("Segoe UI Black", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEdit.Location = new Point(765, 327);
+            btnEdit.Location = new Point(1106, 306);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(150, 55);
             btnEdit.TabIndex = 9;
             btnEdit.Text = "Sửa";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
             btnDelete.Font = new Font("Segoe UI Black", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDelete.Location = new Point(765, 411);
+            btnDelete.Location = new Point(1106, 426);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(150, 55);
             btnDelete.TabIndex = 10;
             btnDelete.Text = "Xóa";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
-            // FormUniversityList
+            // lvSchools
+            // 
+            lvSchools.Location = new Point(86, 218);
+            lvSchools.Name = "lvSchools";
+            lvSchools.Size = new Size(983, 291);
+            lvSchools.TabIndex = 11;
+            lvSchools.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(1106, 218);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(150, 46);
+            btnAdd.TabIndex = 12;
+            btnAdd.Text = "Thêm";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnThem_Click;
+            // 
+            // FormQuanLiTruong
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1020, 576);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1278, 576);
+            Controls.Add(btnAdd);
+            Controls.Add(lvSchools);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
-            Controls.Add(btnAdd);
             Controls.Add(btnSearch);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
+            Controls.Add(txtSearch);
             Controls.Add(lblKhoiDaChon);
             Controls.Add(label1);
-            Name = "FormUniversityList";
+            Name = "FormQuanLiTruong";
             Text = "FormUniversityList";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FormQuanLiTruong_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,11 +148,11 @@
 
         private Label label1;
         private Label lblKhoiDaChon;
-        private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private TextBox txtSearch;
         private Button btnSearch;
-        private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
+        private ListView lvSchools;
+        private Button btnAdd;
     }
 }

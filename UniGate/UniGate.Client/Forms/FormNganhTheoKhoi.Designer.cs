@@ -31,8 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNganhTheoKhoi));
             label1 = new Label();
             lblKhoiDaChon = new Label();
-            dgvNganh = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dgvNganh).BeginInit();
+            listViewNganh = new ListView();
             SuspendLayout();
             // 
             // label1
@@ -59,14 +58,13 @@
             lblKhoiDaChon.TabIndex = 3;
             lblKhoiDaChon.Text = "Tổ hợp bạn đã chọn:";
             // 
-            // dgvNganh
+            // listViewNganh
             // 
-            dgvNganh.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvNganh.Location = new Point(51, 203);
-            dgvNganh.Name = "dgvNganh";
-            dgvNganh.RowHeadersWidth = 82;
-            dgvNganh.Size = new Size(940, 300);
-            dgvNganh.TabIndex = 4;
+            listViewNganh.Location = new Point(71, 186);
+            listViewNganh.Name = "listViewNganh";
+            listViewNganh.Size = new Size(901, 349);
+            listViewNganh.TabIndex = 4;
+            listViewNganh.UseCompatibleStateImageBehavior = false;
             // 
             // FormNganhTheoKhoi
             // 
@@ -74,13 +72,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1020, 576);
-            Controls.Add(dgvNganh);
+            Controls.Add(listViewNganh);
             Controls.Add(lblKhoiDaChon);
             Controls.Add(label1);
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "FormNganhTheoKhoi";
             Text = "FormNganhTheoKhoi";
-            ((System.ComponentModel.ISupportInitialize)dgvNganh).EndInit();
+            Load += FormNganhTheoKhoi_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -89,6 +87,6 @@
 
         private Label label1;
         private Label lblKhoiDaChon;
-        private DataGridView dgvNganh;
+        private ListView listViewNganh;
     }
 }

@@ -1,5 +1,6 @@
-﻿using System.Threading.Tasks.Dataflow;
-using System.Drawing;
+﻿using System.Drawing;
+using System.Threading.Tasks.Dataflow;
+using UniGate.Client.Forms;
 using UniGate.Client.Forms.TraCuuNganhTruong;
 
 namespace UniGate.Client
@@ -24,6 +25,8 @@ namespace UniGate.Client
         private void lblInputScore_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You clicked the Input Score label!");
+            var frm = new FormNhapDiem();
+            frm.ShowDialog();
         }
 
         private void lblScoreManagement_Click(object sender, EventArgs e)
@@ -56,6 +59,8 @@ namespace UniGate.Client
         private void lblMajorByBlock_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You clicked the Major By Block label!");
+            FormChonKhoi f = new FormChonKhoi();
+            f.Show();
         }
 
         private void lblMajorRecommend_Click(object sender, EventArgs e)
