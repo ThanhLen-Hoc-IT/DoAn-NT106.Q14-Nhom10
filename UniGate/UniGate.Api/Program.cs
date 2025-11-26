@@ -1,32 +1,50 @@
-﻿using UniGate.Api.Configurations;
+﻿using Microsoft.EntityFrameworkCore;
+using UniGate.Api.Configurations;
+using UniGate.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
+// ============================
+// 1) Add DbContext
+// ============================
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
+// ============================
+// 2) Add Controllers
+// ============================
 builder.Services.AddControllers();
 
-// Cấu hình Swagger
-builder.Services.AddSwaggerConfig();
+// ============================
+// 3) Swagger
+// ============================
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
-// CORS
-builder.Services.AddCorsConfig();
+// ============================
+// 4) CORS cho phép upload file
+// ============================
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", b =>
+        b.AllowAnyOrigin()
+         .AllowAnyMethod()
+         .AllowAnyHeader());
+});
 
-// JWT config
-builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("Jwt"));
-
-// Build app
 var app = builder.Build();
 
-// Middleware
+// ============================
+// 5) Middleware
+// ============================
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UniGate API v1"));
+    app.UseSwaggerUI();
 }
 
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
-app.UseAuthorization();
 app.MapControllers();
-
 app.Run();

@@ -34,15 +34,17 @@
             label2 = new Label();
             txtName = new TextBox();
             txtCode = new TextBox();
-            comboBox1 = new ComboBox();
+            cboProvince = new ComboBox();
             label3 = new Label();
-            richTextBox1 = new RichTextBox();
+            txtDescription = new RichTextBox();
             label4 = new Label();
-            textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            label5 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            txtLogo = new TextBox();
+            picLogo = new PictureBox();
+            btnLogo = new Button();
+            btnImportExcel = new Button();
+            txtImportFile = new TextBox();
+            btnLuu = new Button();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // lblKhoiDaChon
@@ -94,13 +96,13 @@
             txtCode.Size = new Size(418, 45);
             txtCode.TabIndex = 9;
             // 
-            // comboBox1
+            // cboProvince
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(408, 211);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(418, 40);
-            comboBox1.TabIndex = 10;
+            cboProvince.FormattingEnabled = true;
+            cboProvince.Location = new Point(408, 211);
+            cboProvince.Name = "cboProvince";
+            cboProvince.Size = new Size(418, 40);
+            cboProvince.TabIndex = 10;
             // 
             // label3
             // 
@@ -113,13 +115,13 @@
             label3.TabIndex = 11;
             label3.Text = "Tỉnh:";
             // 
-            // richTextBox1
+            // txtDescription
             // 
-            richTextBox1.Location = new Point(404, 290);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(588, 196);
-            richTextBox1.TabIndex = 12;
-            richTextBox1.Text = "";
+            txtDescription.Location = new Point(404, 290);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(588, 196);
+            txtDescription.TabIndex = 12;
+            txtDescription.Text = "";
             // 
             // label4
             // 
@@ -132,44 +134,62 @@
             label4.TabIndex = 13;
             label4.Text = "Logo:";
             // 
-            // textBox1
+            // txtLogo
             // 
-            textBox1.Location = new Point(404, 537);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(518, 45);
-            textBox1.TabIndex = 14;
+            txtLogo.Location = new Point(404, 537);
+            txtLogo.Multiline = true;
+            txtLogo.Name = "txtLogo";
+            txtLogo.Size = new Size(518, 45);
+            txtLogo.TabIndex = 14;
             // 
-            // pictureBox1
+            // picLogo
             // 
-            pictureBox1.Location = new Point(404, 588);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(388, 243);
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
+            picLogo.Location = new Point(404, 588);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(388, 243);
+            picLogo.TabIndex = 15;
+            picLogo.TabStop = false;
             // 
-            // button1
+            // btnLogo
             // 
-            button1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(954, 533);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 46);
-            button1.TabIndex = 16;
-            button1.Text = "Chọn";
-            button1.UseVisualStyleBackColor = true;
+            btnLogo.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogo.Location = new Point(954, 533);
+            btnLogo.Name = "btnLogo";
+            btnLogo.Size = new Size(150, 46);
+            btnLogo.TabIndex = 16;
+            btnLogo.Text = "Chọn";
+            btnLogo.UseVisualStyleBackColor = true;
+            btnLogo.Click += btnLogo_Click;
             // 
-            // label5
+            // btnImportExcel
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.BorderStyle = BorderStyle.Fixed3D;
-            label5.Font = new Font("Segoe UI Black", 13.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.Brown;
-            label5.Location = new Point(613, 19);
-            label5.Name = "label5";
-            label5.Size = new Size(271, 52);
-            label5.TabIndex = 17;
-            label5.Text = "Thêm Trường";
+            btnImportExcel.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnImportExcel.Location = new Point(954, 870);
+            btnImportExcel.Name = "btnImportExcel";
+            btnImportExcel.Size = new Size(150, 46);
+            btnImportExcel.TabIndex = 17;
+            btnImportExcel.Text = "Import File";
+            btnImportExcel.UseVisualStyleBackColor = true;
+            btnImportExcel.Click += btnImportExcel_Click;
+            // 
+            // txtImportFile
+            // 
+            txtImportFile.Location = new Point(408, 871);
+            txtImportFile.Multiline = true;
+            txtImportFile.Name = "txtImportFile";
+            txtImportFile.Size = new Size(418, 45);
+            txtImportFile.TabIndex = 18;
+            // 
+            // btnLuu
+            // 
+            btnLuu.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLuu.Location = new Point(576, 951);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(183, 72);
+            btnLuu.TabIndex = 19;
+            btnLuu.Text = "Lưu";
+            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // FormAddUniversity
             // 
@@ -177,15 +197,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1346, 856);
-            Controls.Add(label5);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(1346, 1049);
+            Controls.Add(btnLuu);
+            Controls.Add(txtImportFile);
+            Controls.Add(btnImportExcel);
+            Controls.Add(btnLogo);
+            Controls.Add(picLogo);
+            Controls.Add(txtLogo);
             Controls.Add(label4);
-            Controls.Add(richTextBox1);
+            Controls.Add(txtDescription);
             Controls.Add(label3);
-            Controls.Add(comboBox1);
+            Controls.Add(cboProvince);
             Controls.Add(txtCode);
             Controls.Add(txtName);
             Controls.Add(label2);
@@ -193,7 +215,8 @@
             Controls.Add(lblKhoiDaChon);
             Name = "FormAddUniversity";
             Text = "FormAddUniversity";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += FormAddUniversity_Load;
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -205,13 +228,15 @@
         private Label label2;
         private TextBox txtName;
         private TextBox txtCode;
-        private ComboBox comboBox1;
+        private ComboBox cboProvince;
         private Label label3;
-        private RichTextBox richTextBox1;
+        private RichTextBox txtDescription;
         private Label label4;
-        private TextBox textBox1;
-        private PictureBox pictureBox1;
-        private Button button1;
-        private Label label5;
+        private TextBox txtLogo;
+        private PictureBox picLogo;
+        private Button btnLogo;
+        private Button btnImportExcel;
+        private TextBox txtImportFile;
+        private Button btnLuu;
     }
 }
