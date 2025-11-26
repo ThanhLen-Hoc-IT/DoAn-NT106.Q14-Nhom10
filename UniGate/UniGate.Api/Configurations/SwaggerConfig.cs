@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi;
+using Microsoft.OpenApi.Models;
 
 namespace UniGate.Api.Configurations
 {

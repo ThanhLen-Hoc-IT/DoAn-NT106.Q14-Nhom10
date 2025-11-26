@@ -1,6 +1,6 @@
 ﻿namespace UniGate.Client
 {
-    partial class FormChonKhoi
+    partial class FormNganhTheoKhoi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChonKhoi));
-            clbToHop = new CheckedListBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNganhTheoKhoi));
             label1 = new Label();
-            button1 = new Button();
+            lblKhoiDaChon = new Label();
+            listViewNganh = new ListView();
             SuspendLayout();
-            // 
-            // clbToHop
-            // 
-            clbToHop.FormattingEnabled = true;
-            clbToHop.Location = new Point(155, 112);
-            clbToHop.Name = "clbToHop";
-            clbToHop.Size = new Size(719, 364);
-            clbToHop.TabIndex = 0;
             // 
             // label1
             // 
@@ -49,41 +41,52 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Segoe UI Black", 13.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Brown;
-            label1.Location = new Point(325, 39);
+            label1.Location = new Point(262, 52);
             label1.Name = "label1";
-            label1.Size = new Size(450, 52);
-            label1.TabIndex = 1;
-            label1.Text = "Chọn Tổ Hợp Xét Tuyển";
+            label1.Size = new Size(593, 52);
+            label1.TabIndex = 2;
+            label1.Text = "Danh Sách Ngành Theo Tổ Hợp";
             // 
-            // button1
+            // lblKhoiDaChon
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(406, 497);
-            button1.Name = "button1";
-            button1.Size = new Size(230, 54);
-            button1.TabIndex = 2;
-            button1.Text = "Gợi Ý Ngành";
-            button1.UseVisualStyleBackColor = true;
+            lblKhoiDaChon.AutoSize = true;
+            lblKhoiDaChon.BackColor = Color.Transparent;
+            lblKhoiDaChon.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblKhoiDaChon.Location = new Point(169, 129);
+            lblKhoiDaChon.Name = "lblKhoiDaChon";
+            lblKhoiDaChon.Size = new Size(340, 45);
+            lblKhoiDaChon.TabIndex = 3;
+            lblKhoiDaChon.Text = "Tổ hợp bạn đã chọn:";
             // 
-            // FormChonKhoi
+            // listViewNganh
+            // 
+            listViewNganh.Location = new Point(71, 186);
+            listViewNganh.Name = "listViewNganh";
+            listViewNganh.Size = new Size(901, 349);
+            listViewNganh.TabIndex = 4;
+            listViewNganh.UseCompatibleStateImageBehavior = false;
+            // 
+            // FormNganhTheoKhoi
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1020, 576);
-            Controls.Add(button1);
+            Controls.Add(listViewNganh);
+            Controls.Add(lblKhoiDaChon);
             Controls.Add(label1);
-            Controls.Add(clbToHop);
-            Name = "FormChonKhoi";
-            Text = "FormChonKhoi";
+            ForeColor = SystemColors.ActiveCaptionText;
+            Name = "FormNganhTheoKhoi";
+            Text = "FormNganhTheoKhoi";
+            Load += FormNganhTheoKhoi_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private CheckedListBox clbToHop;
         private Label label1;
-        private Button button1;
+        private Label lblKhoiDaChon;
+        private ListView listViewNganh;
     }
 }
