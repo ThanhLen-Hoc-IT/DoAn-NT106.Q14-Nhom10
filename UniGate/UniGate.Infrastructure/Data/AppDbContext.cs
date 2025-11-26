@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace UniGate.Infrastructure.Data
 {
-    internal class AppDbContext
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+          : base(options)
+        {
+        }
+
+        public DbSet<HollandQuestion> HollandQuestions { get; set; }
     }
 }
+
