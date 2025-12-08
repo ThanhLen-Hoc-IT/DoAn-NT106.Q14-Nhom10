@@ -11,8 +11,8 @@ namespace UniGate.Domain.Entities
         public int Id { get; set; }
         public Guid ComboId { get; set; }
 
-        public string Subject { get; set; }
+        public string Subject { get; set; } = string.Empty;
 
-        public Combo Combo { get; set; }
+        public Combo Combo { get; set; } = null!;
     }
 }

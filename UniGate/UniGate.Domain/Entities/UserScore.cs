@@ -66,7 +66,7 @@ namespace UniGate.Domain.Entities
 
 
         // môn ngoại ngữ được chọn
-        public string HB_NgoaiNgu_Mon { get; set; } // "Anh", "Nhật", "Hàn", "Trung", "Đức", "Pháp"
+        public string HB_NgoaiNgu_Mon { get; set; } = string.Empty;
 
         public float? HB_NgoaiNgu_10 { get; set; }
         public float? HB_NgoaiNgu_11 { get; set; }
@@ -81,11 +81,11 @@ namespace UniGate.Domain.Entities
         public float? Thpt_Van { get; set; }    // bắt buộc
 
         // Môn tự chọn 1
-        public string Thpt_TuChon1_Mon { get; set; }
+        public string Thpt_TuChon1_Mon { get; set; } = string.Empty;
         public float? Thpt_TuChon1_Diem { get; set; }
 
         // Môn tự chọn 2
-        public string Thpt_TuChon2_Mon { get; set; }
+        public string Thpt_TuChon2_Mon { get; set; } = string.Empty;
         public float? Thpt_TuChon2_Diem { get; set; }
 
         // ---------------------------
@@ -99,12 +99,12 @@ namespace UniGate.Domain.Entities
         // ---------------------------
         // ƯU TIÊN
         // ---------------------------
-        public string KhuVuc { get; set; }
-        public string DoiTuong { get; set; }
+        public string KhuVuc { get; set; } = string.Empty;
+        public string DoiTuong { get; set; } = string.Empty;
         public float? DiemCongThem { get; set; }
 
 
-        public User User { get; set; }
-    }
+        public User User { get; set; } = null!;
+    }   
 
 }

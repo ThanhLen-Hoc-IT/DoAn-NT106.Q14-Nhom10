@@ -11,7 +11,7 @@ namespace UniGate.Domain.Entities
         public Guid Id { get; set; } = Guid.NewGuid();
 
         public Guid MajorId { get; set; }
-        public Major Major { get; set; }
+        public Major Major { get; set; } = null!;
 
         public float Cutoff { get; set; }  // điểm chuẩn gần nhất
     }
