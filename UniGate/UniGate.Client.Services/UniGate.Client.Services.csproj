@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UniGate.Domain\UniGate.Domain.csproj" />
+    <ProjectReference Include="..\UniGate.Shared\UniGate.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

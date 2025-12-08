@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UniGate.Api.Configurations;
+using UniGate.Api.ModelFromDB;
 using UniGate.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +34,8 @@ builder.Services.AddCors(options =>
          .AllowAnyHeader());
 });
 
+IConfigurationRoot cf = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+builder.Services.AddDbContext<CSDL_DOANContext>(opt => opt.UseSqlServer(cf.GetConnectionString("cnn")));
 var app = builder.Build();
 
 // ============================

@@ -1,20 +1,22 @@
+﻿using System;
+using System.Windows.Forms; // Dòng này quan trọng
+
+// Xóa các using dư thừa nếu cần
 using UniGate.Client.Forms;
-using UniGate.Client.Forms.Auth;
+// using UniGate.Client.Forms.Auth; // Giữ lại nếu bạn dùng Form đăng nhập
 
 namespace UniGate.Client
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new FrmLogin());
+            // Tắt ApplicationConfiguration.Initialize() để tránh lỗi
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+
+            System.Windows.Forms.Application.Run(new SuggestForm());
         }
     }
 }
