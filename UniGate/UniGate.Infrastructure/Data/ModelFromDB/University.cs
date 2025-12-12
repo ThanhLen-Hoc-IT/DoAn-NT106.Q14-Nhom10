@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 [Index("UniversityCode", Name = "UQ__Universi__8A42ECF46F348B2F", IsUnique = true)]
 public partial class University

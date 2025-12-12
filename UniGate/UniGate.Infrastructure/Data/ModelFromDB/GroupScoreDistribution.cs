@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 [Index("GroupId", "ExamYear", "TotalScoreLevel", Name = "IX_GSD_Query")]
 [Index("GroupId", "ExamYear", "TotalScoreLevel", Name = "UQ_GSD_GroupYearScore", IsUnique = true)]

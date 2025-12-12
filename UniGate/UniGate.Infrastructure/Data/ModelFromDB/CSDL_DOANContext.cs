@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 public partial class CSDL_DOANContext : DbContext
 {

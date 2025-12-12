@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 [Index("MajorCode", Name = "UQ__Majors__64E58F9447D5C072", IsUnique = true)]
 public partial class Major

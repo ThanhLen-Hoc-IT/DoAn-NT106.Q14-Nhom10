@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 [Index("UserId", "TestTypeId", Name = "UQ_TestResult_UserType", IsUnique = true)]
 public partial class TestResult

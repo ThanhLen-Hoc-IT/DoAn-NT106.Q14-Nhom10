@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace UniGate.Api.ModelFromDB;
+namespace UniGate.Infrastructure.Data.ModelFromDB;
 
 [Index("CertificateName", "OriginalScore", "ExamYear", Name = "UQ_ScoreConversion", IsUnique = true)]
 public partial class ScoreConversion
