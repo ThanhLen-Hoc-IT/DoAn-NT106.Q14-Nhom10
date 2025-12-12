@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore; // Cần thêm nếu chưa có
 using System.Linq; // Cần thêm nếu chưa có
 using System.Threading.Tasks; // Cần thêm nếu chưa có
 
-using UniGate.Api.ModelFromDB;
+using UniGate.Infrastructure.Data.ModelFromDB;
+
 // Đổi dòng using UniGate.Domain.Entities; thành dùng alias để tránh xung đột
 using DomainUser = UniGate.Domain.Entities.User; // <-- SỬA DÒNG NÀY
 

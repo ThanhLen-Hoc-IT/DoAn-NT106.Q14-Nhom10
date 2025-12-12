@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UniGate.Api.Configurations;
-using UniGate.Api.ModelFromDB;
+using UniGate.Infrastructure.Data.ModelFromDB;
 using UniGate.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
